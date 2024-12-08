@@ -100,3 +100,8 @@ document.addEventListener("keydown", (event) => {
         toggleMenu();
     }
 });
+
+document.addEventListener("scroll", t => {
+    document.documentElement.scrollTop >= 100 ? document.querySelector("body").classList.add("scroll") : document.querySelector("body").classList.remove("scroll")
+}
+);
