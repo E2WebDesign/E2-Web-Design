@@ -1,13 +1,14 @@
 ---
-title: Acuti modo
+title: How to Optimize Your Facebook Business Page for the Best Results
 url: acuti-modo
-description: Lorem markdownum tardantis unam mitissima dissimulator inposuit   corpus sintque tura tremenda, nec coetum.
-author: Code Stitch
-date: 2023-06-08T15:26:46.705Z
+description: Lorem markdownum tardantis unam mitissima dissimulator
+  inposuit   corpus sintque tura tremenda, nec coetum.
+author: E2 Wed Design
+date: 2024-12-09T20:03:00.000Z
 tags:
-    - post
-image: /assets/images/blog/landing.jpg
-imageAlt: Kitchen
+  - post
+image: /assets/images/blog/fb-m.jpg
+imageAlt: "social media "
 ---
 
 ## Lacerans aliter tetigit praeterea rite

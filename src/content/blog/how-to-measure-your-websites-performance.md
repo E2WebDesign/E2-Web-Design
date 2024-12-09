@@ -1,13 +1,13 @@
 ---
-title: Sucos Creati
+title: How to Measure Your Websites Performance
 url: sucos-creati
 description: Lorem markdownum Talia. Carinae equis.
-author: Code Stitch
+author: E2 Web Design
 date: 2023-06-08T15:27:34.591Z
 tags:
-    - post
-image: /assets/images/blog/landing.jpg
-imageAlt: Kitchen
+  - post
+image: /assets/images/blog/analytics-1.png
+imageAlt: Google Lighthouse Performance
 ---
 
 ## Hospes meus

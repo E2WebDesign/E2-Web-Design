@@ -4,6 +4,11 @@
 <---        Core Styles         -->
 <--- -------------------------- -*/
 
+html {
+    background-color: #f7f7f7;
+}
+
+
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
     .blog-container {
@@ -259,6 +264,9 @@
         width: 100%;
         overflow: hidden;
         flex: none;
+        box-shadow: 2px 2px 10px #0000001b;
+        border-radius: (16/16rem);
+        background-color: white;
 
         .blog-mainImage {
             position: relative;
@@ -279,7 +287,6 @@
         }
 
         .article-group {
-            border: 1px solid #ebebeb;
             border-radius: 0 0 (8/16em) (8/16em);
             padding: clamp(30px, 5vw, 50px);
         }
@@ -345,7 +352,7 @@
             display: inline-block;
             border-radius: (4/16rem);
             margin: auto;
-            background-color: var(--headerColor);
+            background-color: var(--buttonBackgroundColor);
             min-width: (150/16rem);
             /* prevents padding from adding to the width */
             box-sizing: border-box;
@@ -355,7 +362,7 @@
             /* 46px - 56px */
             line-height: clamp(2.875em, 5.5vw, 3.5em);
             font-weight: 700;
-            color: #fff;
+            color: var(--buttonTextColor);
             transition: color 0.3s;
             text-align: center;
 
@@ -377,10 +384,7 @@
             }
 
             &:hover {
-                color: var(--headerColor);
-                &:before {
-                    opacity: 1;
-                }
+                background-color: var(--buttonHoverColor);
             }
         }
     }
@@ -470,10 +474,11 @@
             flex-direction: column;
             justify-content: flex-start;
             align-items: center;
-            border: 1px solid #ebebeb;
-            border-radius: (8/16em);
+            box-shadow: 2px 2px 10px #00000017;
+            border-radius: (16/16em);
             width: 100%;
             padding: (35/16em) (30/16em);
+            background-color: white;
         }
 
         .blog-header {

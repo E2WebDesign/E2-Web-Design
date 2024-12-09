@@ -5,17 +5,20 @@
 /* CodeStitch Root and Helpers */
 @media only screen and (min-width: 0rem) {
   :root {
-    --primary: #c1c258;
-    --primaryLight: #c1c258;
-    --primaryDark: #a0a249;
-    --secondary: #001f3f;
-    --secondaryLight: #001f3f;
+    --primary: #001f3f;
+    --primaryLight: #001f3f;
+    --primaryDark: #001f3f;
+    --secondary: #c1c258;
+    --secondaryDark: #a0a249;
     --offSet: #f7f7f7;
-    --svgBackground: #c0c2588b;
+    --svgBackground: #001f3f;
+    --svgBackgroundAlt: #c0c2588b;
     --headerColor: #1a1a1a;
     --bodyTextColor: #4e4b66;
     --bodyTextColorWhite: #fafbfc;
+    --buttonBackgroundColor: #c1c258;
     --buttonHoverColor: #a0a249;
+    --buttonTextColor: #000;
     /* 13px - 16px */
     --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
     /* 31px - 49px */
@@ -58,7 +61,7 @@
     z-index: 1;
     position: relative;
     display: inline-block;
-    background-color: var(--primary);
+    background-color: var(--buttonBackgroundColor);
     border-radius: 0.375rem;
     width: auto;
     padding: 0 1.875rem;
@@ -67,7 +70,7 @@
     font-size: 1rem;
     line-height: 3.125em;
     font-weight: bold;
-    color: #000;
+    color: var(--buttonTextColor);
     transition: color 0.3s;
     transition-delay: 0.1s;
     text-align: center;
@@ -509,7 +512,7 @@ html {
     width: 100%;
     height: 2px;
     border-radius: 2px;
-    background-color: #000;
+    background-color: #fff;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -625,10 +628,10 @@ html {
     position: relative;
   }
   #cs-navigation .cs-li-link.cs-active {
-    color: var(--primary);
+    color: var(--secondary);
   }
   #cs-navigation .cs-li-link:hover {
-    color: var(--primary);
+    color: var(--secondary);
   }
   #cs-navigation .cs-button-solid {
     display: none;
@@ -774,12 +777,11 @@ html {
   }
   #cs-navigation .cs-drop-li {
     list-style: none;
-    background-color: var(--primary);
+    background-color: #f7f7f7;
     padding: 0.0625rem 0.5rem 0.0625rem;
-    border-radius: 0.375rem;
   }
   #cs-navigation .cs-drop-li:hover {
-    background-color: var(--buttonHoverColor);
+    color: var(--secondary);
   }
   #cs-navigation .cs-li-link {
     color: var(--headerColor);
@@ -901,7 +903,7 @@ html {
     transition: color 0.3s, background-color 0.3s;
   }
   #cs-navigation .cs-li-link.cs-drop-link:hover {
-    color: var(--primary);
+    color: var(--secondary);
     background-color: #f7f7f7;
   }
   #cs-navigation .cs-li-link.cs-drop-link:before {
@@ -1083,7 +1085,7 @@ html {
     transition: color 0.3s;
   }
   #cs-navigation .cs-li-link:hover {
-    color: var(--primary);
+    color: var(--secondary);
   }
   #cs-navigation .cs-li-link.cs-active {
     font-weight: 700;
@@ -1400,7 +1402,7 @@ html {
     transition: color 0.3s;
   }
   #footer .right-section .lists ul li a:hover {
-    color: var(--primary);
+    color: var(--secondary);
   }
   #footer .right-section .lists ul h2 {
     position: relative;
@@ -1418,7 +1420,7 @@ html {
     content: "";
     opacity: 1;
     display: block;
-    background: var(--primary);
+    background: #f7f7f7;
     height: 0.125rem;
     width: 6.0625rem;
   }
@@ -1456,7 +1458,7 @@ html {
   #footer .credit a {
     text-decoration: none;
     font-size: 1rem;
-    color: var(--primary);
+    color: var(--secondary);
   }
   #footer .credit a:hover {
     text-decoration: underline;
@@ -1505,7 +1507,7 @@ html {
     transition: color 0.3s;
   }
   #footer .right-section .lists ul li a:hover {
-    color: var(--primary);
+    color: var(--secondary);
   }
   #footer .right-section .lists ul h2 {
     position: relative;
@@ -1525,7 +1527,7 @@ html {
     content: "";
     opacity: 1;
     display: block;
-    background: var(--primary);
+    background: #f7f7f7;
     height: 0.125rem;
     width: 6.0625rem;
   }

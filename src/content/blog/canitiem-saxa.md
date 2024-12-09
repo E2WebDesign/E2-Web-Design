@@ -1,14 +1,14 @@
 ---
-title: Canitiem Saxa
+title: How to Track Your Websites Data
 url: canitiem-saxa
 description: Lorem markdownum trabeati dicere deus.
-author: Code Stitch
-date: 2023-06-08T15:28:08.486Z
+author: E2 Web Design
+date: 2022-02-01T03:03:00.000Z
 tags:
-    - post
-    - featured
-image: /assets/images/blog/landing.jpg
-imageAlt: Kitchen
+  - post
+  - featured
+image: /assets/images/blog/stats-7-m.jpg
+imageAlt: Analytics
 ---
 
 ## Aut inter Petraeum

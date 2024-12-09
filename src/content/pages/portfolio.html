@@ -1,5 +1,5 @@
 ---
-title: 'About | Code Stitch Web Designs'
+title: 'Portfolio | E2 Web Design'
 description: 'Meta description for the page'
 preloadImg: '/assets/images/cabinets2.jpg'
 permalink: 'portfolio/'
@@ -11,7 +11,7 @@ eleventyNavigation:
 {% extends "layouts/base.html" %}
 
 {% block head %}
-    <link rel="stylesheet" href="/assets/css/about.css">
+    <link rel="stylesheet" href="/assets/css/portfolio.css">
 {% endblock %}
 
 {% block body %}
@@ -20,56 +20,127 @@ eleventyNavigation:
     <!-- ============================================ -->
 
     <section id="int-hero">
-        <h1 id="home-h">About Us</h1>
+        <h1 id="home-h">Our Work</h1>
         <picture>
-            <source media="(max-width: 600px)" srcset="/assets/images/cabinets2-m.jpg">
-            <source media="(min-width: 601px)" srcset="/assets/images/cabinets2.jpg">
-            <img aria-hidden="true" decoding="async" src="/assets/images/cabinets2.jpg" alt="kitchen cabinets" loading="eager" width="2500" height="1667">
+            <source media="(max-width: 600px)" srcset="/assets/images/typing-8-m.jpg">
+            <source media="(min-width: 601px)" srcset="/assets/images/typing-8-l.jpg">
+            <img aria-hidden="true" decoding="async" src="/assets/images/typing-8-l.jpg" alt="kitchen cabinets" loading="eager" width="2500" height="1667">
         </picture>
 
     </section>
 
-    <!-- ============================================ -->
-    <!--                 Side By Side                 -->
-    <!-- ============================================ -->
+<!-- ============================================ -->
+<!--                   Gallery                    -->
+<!-- ============================================ -->
 
-    <section id="sbs">
-        <div class="cs-container">
-            <!-- Left Image Section -->
-            <div class="cs-left">
-                <picture class="cs-picture cs-picture1">
-                    <source media="(max-width: 600px)" srcset="/assets/images/cabinets2-m.jpg">
-                    <source media="(min-width: 601px)" srcset="/assets/images/cabinets2.jpg">
-                    <img aria-hidden="true" decoding="async" src="/assets/images/cabinets2.jpg" alt="cabinets" loading="lazy" width="400" height="563">
-                </picture>
-                <picture class="cs-picture cs-picture2">
-                    <source media="(max-width: 600px)" srcset="/assets/images/construction-m.jpg">
-                    <source media="(min-width: 601px)" srcset="/assets/images/construction.jpg">
-                    <img aria-hidden="true" decoding="async" src="/assets/images/construction.jpg" alt="house" loading="lazy" width="400" height="563">
-                </picture>
-            </div>
-            <!-- Right Content Section-->
-            <div class="cs-right">
-                <span class="cs-topper">About Us</span>
-                <h2 class="cs-title">About Company Title</h2>
-                <p class="cs-text">
-                    In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad litora torquent per.
-                </p>
-                <p class="cs-text">
-                    In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad litora torquent per.
-                </p>
-                <div class="cs-flex-group">
-                    <p class="cs-flex-p">
-                        In consequat tincidunt turpis sit amet imperdiet. Praesent Classei consequat tincidunt turpis sit amet imperdiet for mind.
-                    </p>
-                    <span class="cs-name">Justin Time</span>
-                    <span class="cs-job">CEO-Founder</span>
-                    <img class="cs-quote-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/quote-white.svg" alt="gavel" width="136" height="77">
-                </div>
-                <a href="/projects" class="cs-button-solid">Our Projects</a>
-            </div>
+<section id="gallery-1374">
+    <div class="cs-container">
+        <div class="cs-content">
+            <h2 class="cs-title">Websites We've Built for Businesses Like Yours</h2>
+            <p class="cs-text">
+                We specialize in small business web design and development for clients anywhere in the US. Every line of code is written by hand to ensure the best performance, which helps bring in more customers to your site and bring more revenue to your business.
+            </p>
         </div>
-    </section>
+        <ul class="cs-image-group">
+            <!-- Card 1 -->
+            <li class="cs-item">
+                <a href="https://lakesareadental.netlify.app/" class="cs-link">
+                    <picture class="cs-picture">
+                        <source media="(max-width: 600px)" srcset="../assets/images/portfolio-2.png">
+                        <source media="(min-width: 601px)" srcset="../assets/images/portfolio-2.png">
+                        <img loading="lazy" decoding="async" src="../assets/images/portfolio-2.png" alt="fancy house" width="346" height="346">
+                    </picture>
+                    <div class="cs-item-text">
+                        <div class="cs-flex">
+                            <h3 class="cs-h3">Lakes Area Dental</h3>
+                            <span class="cs-desc">Alexandria Dental Clinic</span>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <!-- Card 2 -->
+            <li class="cs-item">
+                <a href="https://stpauldetail.netlify.app/" class="cs-link">
+                    <picture class="cs-picture">
+                        <source media="(max-width: 600px)" srcset="../assets/images/portfolio-1.png">
+                        <source media="(min-width: 601px)" srcset="../assets/images/portfolio-1.png">
+                        <img loading="lazy" decoding="async" src="../assets/images/portfolio-1.png" alt="modern house" width="346" height="346">
+                    </picture>
+                    <div class="cs-item-text">
+                        <div class="cs-flex">
+                            <h3 class="cs-h3">St. Paul Detail</h3>
+                            <span class="cs-desc">Twin Cities Mobile Auto Detailing</span>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <!-- Card 3 -->
+            <li class="cs-item">
+                <a href="https://lakesarealandscaping.netlify.app/" class="cs-link">
+                    <picture class="cs-picture">
+                        <source media="(max-width: 600px)" srcset="../assets/images/portfolio-3.png">
+                        <source media="(min-width: 601px)" srcset="../assets/images/portfolio-3.png">
+                        <img aria-hidden="true" loading="lazy" decoding="async" src="../assets/images/portfolio-3.png" alt="modern home at night" width="346" height="346">
+                    </picture>
+                    <div class="cs-item-text">
+                        <div class="cs-flex">
+                            <h3 class="cs-h3">Lakes Area Landscaping</h3>
+                            <span class="cs-desc">Alexandria Home and Commercial Landscaping</span>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <!-- Card 4 -->
+            <li class="cs-item">
+                <a href="https://lakesareadental.netlify.app/" class="cs-link">
+                    <picture class="cs-picture">
+                        <source media="(max-width: 600px)" srcset="../assets/images/portfolio-2.png">
+                        <source media="(min-width: 601px)" srcset="../assets/images/portfolio-2.png">
+                        <img loading="lazy" decoding="async" src="../assets/images/portfolio-2.png" alt="fancy house" width="346" height="346">
+                    </picture>
+                    <div class="cs-item-text">
+                        <div class="cs-flex">
+                            <h3 class="cs-h3">Lakes Area Dental</h3>
+                            <span class="cs-desc">Alexandria Dental Clinic</span>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <!-- Card 5 -->
+            <li class="cs-item">
+                <a href="https://stpauldetail.netlify.app/" class="cs-link">
+                    <picture class="cs-picture">
+                        <source media="(max-width: 600px)" srcset="../assets/images/portfolio-1.png">
+                        <source media="(min-width: 601px)" srcset="../assets/images/portfolio-1.png">
+                        <img loading="lazy" decoding="async" src="../assets/images/portfolio-1.png" alt="modern house" width="346" height="346">
+                    </picture>
+                    <div class="cs-item-text">
+                        <div class="cs-flex">
+                            <h3 class="cs-h3">St. Paul Detail</h3>
+                            <span class="cs-desc">Twin Cities Mobile Auto Detailing</span>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <!-- Card 6 -->
+            <li class="cs-item">
+                <a href="https://lakesarealandscaping.netlify.app/" class="cs-link">
+                    <picture class="cs-picture">
+                        <source media="(max-width: 600px)" srcset="../assets/images/portfolio-3.png">
+                        <source media="(min-width: 601px)" srcset="../assets/images/portfolio-3.png">
+                        <img aria-hidden="true" loading="lazy" decoding="async" src="../assets/images/portfolio-3.png" alt="modern home at night" width="346" height="346">
+                    </picture>
+                    <div class="cs-item-text">
+                        <div class="cs-flex">
+                            <h3 class="cs-h3">Lakes Area Landscaping</h3>
+                            <span class="cs-desc">Alexandria Home and Commercial Landscaping</span>
+                        </div>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+</section>
 
     {% include 'components/cta.html' %}
 
