@@ -5,19 +5,19 @@
 /* CodeStitch Root and Helpers */
 @media only screen and (min-width: 0rem) {
   :root {
-    --primary: #001f3f;
+    --primary: #3d73a2;
     --primaryLight: #001f3f;
     --primaryDark: #001f3f;
     --secondary: #c1c258;
     --secondaryDark: #a0a249;
     --offSet: #f7f7f7;
-    --svgBackground: #001f3f;
-    --svgBackgroundAlt: #c0c2588b;
+    --svgBackground: #e6e0da;
+    --svgBackgroundAlt: #3d73a2;
     --headerColor: #1a1a1a;
     --bodyTextColor: #4e4b66;
     --bodyTextColorWhite: #fafbfc;
-    --buttonBackgroundColor: #b3b61b;
-    --buttonHoverColor: #a0a249;
+    --buttonBackgroundColor: #3d73a2;
+    --buttonHoverColor: #2e5d87;
     --buttonTextColor: #000;
     /* 13px - 16px */
     --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
@@ -70,7 +70,7 @@
     font-size: 1rem;
     line-height: 3.125em;
     font-weight: bold;
-    color: var(--buttonTextColor);
+    color: white;
     transition: color 0.3s;
     transition-delay: 0.1s;
     text-align: center;
@@ -420,10 +420,11 @@ html {
     display: none;
   }
   #cs-navigation .cs-social-link {
+    color: transparent;
     text-decoration: none;
     width: 2rem;
     height: 2rem;
-    background-color: var(--primary);
+    background-color: var(--svgBackgroundAlt);
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -436,7 +437,7 @@ html {
   #cs-navigation .cs-social-icon {
     width: 0.75rem;
     height: auto;
-    opacity: 0.6;
+    opacity: 1;
     display: block;
   }
   #cs-navigation .cs-container {
@@ -1010,9 +1011,10 @@ html {
   }
   #cs-navigation .cs-social-link {
     text-decoration: none;
+    color: transparent;
     width: 2rem;
     height: 2rem;
-    background-color: var(--primary);
+    background-color: var(--svgBackgroundAlt);
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -1025,7 +1027,7 @@ html {
   #cs-navigation .cs-social-icon {
     width: 0.75rem;
     height: auto;
-    opacity: 0.6;
+    opacity: 1;
     display: block;
   }
   #cs-navigation .cs-container {
@@ -1163,9 +1165,6 @@ html {
   body.dark-mode #cs-navigation .cs-desc,
   body.dark-mode #cs-navigation .cs-top-link {
     opacity: 0.8;
-  }
-  body.dark-mode #cs-navigation .cs-social-link {
-    background-color: var(--secondary);
   }
   body.dark-mode #cs-navigation .cs-logo,
   body.dark-mode #cs-navigation .cs-link-icon {
@@ -1458,7 +1457,7 @@ html {
   #footer .credit a {
     text-decoration: none;
     font-size: 1rem;
-    color: var(--secondary);
+    color: var(--primary);
   }
   #footer .credit a:hover {
     text-decoration: underline;

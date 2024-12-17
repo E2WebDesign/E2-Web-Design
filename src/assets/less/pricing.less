@@ -2,11 +2,10 @@
 <---          Pricing           -->
 <--- -------------------------- -*/
 
-/* Mobile */
+/* Mobile 360px */
 @media only screen and (min-width: 0rem) {
-    #pricing-356 {
+    #pricing-387 {
         padding: var(--sectionPadding);
-        background-color: #f7f7f7;
 
         .cs-container {
             width: 100%;
@@ -121,8 +120,6 @@
 
         .cs-option-group {
             position: relative;
-            /* hides the second options when it leaves the container */
-            overflow: hidden;
             /* these two create the 3D illusion */
             perspective: 700px;
             transform-style: preserve-3d;
@@ -146,7 +143,7 @@
                 transform 0.3s;
         }
 
-        #cs-option2-356 {
+        #cs-option2-387 {
             position: relative;
             &:before {
                 /* squiggle arrow */
@@ -168,7 +165,7 @@
                 /* percentage off */
                 content: "30% off";
                 font-size: (12/16rem);
-                line-height: (26/16em);
+                line-height: (26/16rem);
                 text-transform: uppercase;
                 font-weight: 500;
                 width: auto;
@@ -217,7 +214,7 @@
             /* 16px - 32px left & right */
             padding: clamp(1.25rem, 3vw, 2rem) clamp(1rem, 2.4vw, 2rem);
             width: 100%;
-            max-width: (413/16rem);
+            max-width: (630/16rem);
             border-radius: (16/16rem);
             background: #fff;
             border: 1px solid #e8e8e8;
@@ -225,16 +222,10 @@
             box-sizing: border-box;
 
             &:nth-of-type(2) {
+                background-color: #f7f7f7;
                 .cs-option2-text,
                 .cs-option1-text {
                     transition-delay: 0.1s;
-                }
-            }
-
-            &:nth-of-type(3) {
-                .cs-option2-text,
-                .cs-option1-text {
-                    transition-delay: 0.2s;
                 }
             }
         }
@@ -252,7 +243,7 @@
                 content: "Popular";
                 font-size: (14/16rem);
                 text-align: center;
-                line-height: (29/16em);
+                line-height: (29/16rem);
                 font-weight: 700;
                 width: (170/16rem);
                 padding: 0 (12/16rem);
@@ -445,11 +436,11 @@
 
 /* Tablet 768px */
 @media only screen and (min-width: 48rem) {
-    #pricing-356 {
+    #pricing-387 {
         .cs-card-group {
             flex-direction: row;
             flex-wrap: wrap;
-            justify-content: space-between;
+            justify-content: center;
             flex-wrap: nowrap;
         }
 
@@ -464,7 +455,7 @@
             order: unset;
         }
 
-        #cs-option2-356 {
+        #cs-option2-387 {
             &:before {
                 top: (-10/16rem);
             }
@@ -476,10 +467,50 @@
     }
 }
 
+/* Desktop 1300px */
+@media only screen and (min-width: 81.25rem) {
+    #pricing-387 {
+        .cs-top-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            &:after {
+                /* top right box */
+                content: "";
+                width: 100%;
+                height: 1px;
+                /* 32px - 40px */
+                margin-bottom: clamp(2rem, 4vw, 2.5rem);
+                background: linear-gradient(
+                    90deg,
+                    rgba(232, 232, 232, 0.2) 0%,
+                    #e8e8e8 53.78%,
+                    rgba(232, 232, 232, 0.2) 100%
+                );
+                opacity: 1;
+                position: relative;
+                display: block;
+            }
+        }
+        .cs-option-group {
+            margin-right: (80/16rem);
+            &:after {
+                display: none;
+            }
+        }
+        .cs-ul {
+            /* splits the list into 2 columns */
+            columns: 2;
+            column-gap: (110/16rem);
+        }
+    }
+}
+
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
     body.dark-mode {
-        #pricing-356 {
+        #pricing-387 {
             background-color: var(--dark);
             .cs-topper {
                 color: var(--primaryLight);
@@ -517,5 +548,7 @@
         }
     }
 }
+
+                                
 
                                 
