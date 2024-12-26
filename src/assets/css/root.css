@@ -304,31 +304,6 @@ html {
   margin: 0;
   padding: 0;
 }
-.custom-shape-divider-bottom-1735027508 {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-  transform: rotate(180deg);
-}
-.custom-shape-divider-bottom-1735027508 svg {
-  position: relative;
-  display: block;
-  width: calc(140% + 1.3px);
-  height: 63px;
-}
-.custom-shape-divider-bottom-1735027508 .shape-fill {
-  fill: #F7F7F7;
-}
-/** For mobile devices **/
-@media (max-width: 767px) {
-  .custom-shape-divider-bottom-1735027508 svg {
-    width: calc(140% + 1.3px);
-    height: 51px;
-  }
-}
 /* Mobile - 1023px */
 @media only screen and (max-width: 63.9375rem) {
   body.cs-open {
@@ -479,10 +454,9 @@ html {
   }
   #cs-navigation .cs-logo {
     /* 32px - 48px */
-    height: 5rem;
+    height: 2rem;
     width: auto;
     /* 32px - 48px */
-    height: 3.5rem;
     margin: 0 auto 0 0;
     /* prevents padding and border from affecting height and width */
     padding: 0;
@@ -716,7 +690,7 @@ html {
     transition: opacity 0.3s, visibility 0.3s, height 0.3s;
   }
   #cs-navigation .cs-logo {
-    height: 5rem;
+    height: 2rem;
   }
 }
 /* Dark Mode */
@@ -1324,6 +1298,8 @@ html {
     /* 48px - 64px */
     gap: clamp(3rem, 6vw, 4rem);
     position: relative;
+    border: clamp(0.375em, 1.5vw, 0.75em) solid #fff;
+    border-radius: 2rem;
   }
   #cta-52 .cs-content {
     /* set text align to left if content needs to be left aligned */
@@ -1364,6 +1340,7 @@ html {
     top: 0;
     left: 0;
     z-index: 1;
+    border-radius: 1rem;
   }
   #cta-52 .cs-picture img {
     position: absolute;
@@ -1372,6 +1349,7 @@ html {
     height: 100%;
     width: 100%;
     object-fit: cover;
+    border-radius: 1rem;
   }
 }
 /*-- -------------------------- -->
@@ -1394,7 +1372,7 @@ html {
     display: inline-block;
     margin: auto;
     margin-bottom: 1.875em;
-    height: 9.375em;
+    height: 2rem;
     width: auto;
     text-align: center;
   }
@@ -1613,7 +1591,7 @@ html {
   }
   #footer .left-section .logo {
     margin-left: 0;
-    height: 2.8125em;
+    height: 2rem;
     text-align: left;
   }
   #footer .left-section p {
