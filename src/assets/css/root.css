@@ -5,19 +5,20 @@
 /* CodeStitch Root and Helpers */
 @media only screen and (min-width: 0rem) {
   :root {
-    --primary: #3d73a2;
-    --primaryLight: #001f3f;
+    --primary: #0353a4;
+    --primaryLight: #0c0d0f;
     --primaryDark: #001f3f;
     --secondary: #c1c258;
     --secondaryDark: #a0a249;
     --offSet: #f7f7f7;
-    --svgBackground: #e6e0da;
-    --svgBackgroundAlt: #3d73a2;
+    --svgBackground: #3d73a21f;
+    --svgBackgroundAlt: #0353a4;
     --headerColor: #1a1a1a;
     --bodyTextColor: #4e4b66;
     --bodyTextColorWhite: #fafbfc;
-    --buttonBackgroundColor: #3d73a2;
-    --buttonHoverColor: #2e5d87;
+    --buttonBackgroundColor: #0353a4;
+    --buttonFontColor: #fff;
+    --buttonHoverColor: #00478e;
     --buttonTextColor: #000;
     /* 13px - 16px */
     --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
@@ -62,6 +63,7 @@
     position: relative;
     display: inline-block;
     background-color: var(--buttonBackgroundColor);
+    color: var(--buttonFontColor);
     border-radius: 0.375rem;
     width: auto;
     padding: 0 1.875rem;
@@ -70,7 +72,6 @@
     font-size: 1rem;
     line-height: 3.125em;
     font-weight: bold;
-    color: white;
     transition: color 0.3s;
     transition-delay: 0.1s;
     text-align: center;
@@ -302,6 +303,31 @@ html {
   /* reset margin and padding so there's no gap between the nav and the screen edges */
   margin: 0;
   padding: 0;
+}
+.custom-shape-divider-bottom-1735027508 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+.custom-shape-divider-bottom-1735027508 svg {
+  position: relative;
+  display: block;
+  width: calc(140% + 1.3px);
+  height: 63px;
+}
+.custom-shape-divider-bottom-1735027508 .shape-fill {
+  fill: #F7F7F7;
+}
+/** For mobile devices **/
+@media (max-width: 767px) {
+  .custom-shape-divider-bottom-1735027508 svg {
+    width: calc(140% + 1.3px);
+    height: 51px;
+  }
 }
 /* Mobile - 1023px */
 @media only screen and (max-width: 63.9375rem) {
@@ -629,10 +655,10 @@ html {
     position: relative;
   }
   #cs-navigation .cs-li-link.cs-active {
-    color: var(--secondary);
+    color: var(--primary);
   }
   #cs-navigation .cs-li-link:hover {
-    color: var(--secondary);
+    color: var(--primary);
   }
   #cs-navigation .cs-button-solid {
     display: none;
@@ -703,7 +729,7 @@ html {
     filter: grayscale(1) brightness(1000%);
   }
   body.dark-mode #cs-navigation .cs-social-link {
-    background-color: var(--secondary);
+    background-color: var(--primary);
   }
   body.dark-mode #cs-navigation .cs-social-link:hover {
     background-color: #fff;
@@ -782,7 +808,7 @@ html {
     padding: 0.0625rem 0.5rem 0.0625rem;
   }
   #cs-navigation .cs-drop-li:hover {
-    color: var(--secondary);
+    color: var(--primary);
   }
   #cs-navigation .cs-li-link {
     color: var(--headerColor);
@@ -904,7 +930,7 @@ html {
     transition: color 0.3s, background-color 0.3s;
   }
   #cs-navigation .cs-li-link.cs-drop-link:hover {
-    color: var(--secondary);
+    color: var(--primary);
     background-color: #f7f7f7;
   }
   #cs-navigation .cs-li-link.cs-drop-link:before {
@@ -937,14 +963,32 @@ html {
 <--- -------------------------- -*/
 /* Small Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
+  body.scroll #cs-navigation {
+    box-shadow: 2px 2px 10px #3d73a23c;
+  }
+  body.scroll #cs-navigation .cs-top-container {
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    padding: 0;
+    gap: 0;
+  }
+  body.scroll #cs-navigation .cs-top-social {
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    visibility: hidden;
+  }
   #cs-navigation {
     width: 100%;
     padding: 0;
     /* prevents padding and border from affecting height and width */
     box-sizing: border-box;
-    background-color: #fff;
     position: fixed;
     z-index: 10000;
+    background-color: white;
+    box-shadow: 2px 2px 10px #3d73a21f;
   }
   #cs-navigation .cs-top-bar {
     width: 100%;
@@ -962,6 +1006,7 @@ html {
     justify-content: space-between;
     align-items: center;
     gap: 3.125rem;
+    transition: visibility 0.3s, opacity 0.3s, height 0.3s, overflow 0.3s, padding 0.3s, gap 0.3s;
   }
   #cs-navigation .cs-top-contact {
     display: flex;
@@ -1008,6 +1053,7 @@ html {
     justify-content: center;
     align-items: center;
     gap: 0.5rem;
+    transition: visibility 0.3s, opacity 0.3s, height 0.3s, overflow 0.3s, padding 0.3s, gap 0.3s;
   }
   #cs-navigation .cs-social-link {
     text-decoration: none;
@@ -1087,7 +1133,7 @@ html {
     transition: color 0.3s;
   }
   #cs-navigation .cs-li-link:hover {
-    color: var(--secondary);
+    color: var(--primary);
   }
   #cs-navigation .cs-li-link.cs-active {
     font-weight: 700;
@@ -1160,7 +1206,7 @@ html {
   }
   body.dark-mode #cs-navigation .cs-li-link:hover,
   body.dark-mode #cs-navigation .cs-top-link:hover {
-    color: var(--secondary);
+    color: var(--primary);
   }
   body.dark-mode #cs-navigation .cs-desc,
   body.dark-mode #cs-navigation .cs-top-link {
@@ -1313,8 +1359,8 @@ html {
     display: block;
     height: 100%;
     width: 100%;
-    background: #000;
-    opacity: 0.8;
+    background: #0d3b69;
+    opacity: 0.7;
     top: 0;
     left: 0;
     z-index: 1;
@@ -1334,9 +1380,10 @@ html {
 /* Mobile */
 @media only screen and (min-width: 0rem) {
   #footer {
-    background: #1c1c1c;
+    background: #d3d5d9;
     padding: 5.25rem 0 calc(20 / 16 * 1rem);
     font-size: min(4vw, 1.2em);
+    position: relative;
   }
   #footer .left-section {
     margin: auto;
@@ -1362,7 +1409,7 @@ html {
     width: 100%;
     font-size: 0.875rem;
     line-height: 1.92857143rem;
-    color: #fff;
+    color: var(--primary);
     text-align: center;
   }
   #footer .right-section {
@@ -1392,16 +1439,16 @@ html {
     margin-bottom: 0.75rem;
     list-style: none;
     font-size: 1.125rem;
-    color: #fff;
+    color: var(--primary);
   }
   #footer .right-section .lists ul li a {
     text-decoration: none;
     line-height: 1.16666667em;
-    color: #fff;
+    color: var(--primary);
     transition: color 0.3s;
   }
   #footer .right-section .lists ul li a:hover {
-    color: var(--secondary);
+    color: var(--primary);
   }
   #footer .right-section .lists ul h2 {
     position: relative;
@@ -1410,7 +1457,7 @@ html {
     font-size: 1.125rem;
     line-height: 1.16666667em;
     font-weight: bold;
-    color: #fff;
+    color: var(--primary);
   }
   #footer .right-section .lists ul h2:before {
     position: absolute;
@@ -1419,7 +1466,7 @@ html {
     content: "";
     opacity: 1;
     display: block;
-    background: #f7f7f7;
+    background: var(--primary);
     height: 0.125rem;
     width: 6.0625rem;
   }
@@ -1451,7 +1498,7 @@ html {
     width: 96%;
     font-size: 1rem;
     line-height: 2.25rem;
-    color: #fff;
+    color: var(--primary);
     text-align: center;
   }
   #footer .credit a {
@@ -1497,16 +1544,16 @@ html {
     margin-bottom: 0.75rem;
     list-style: none;
     font-size: 1.125rem;
-    color: #fff;
+    color: var(--primary);
   }
   #footer .right-section .lists ul li a {
     text-decoration: none;
     line-height: 1.16666667em;
-    color: #fff;
+    color: var(--primary);
     transition: color 0.3s;
   }
   #footer .right-section .lists ul li a:hover {
-    color: var(--secondary);
+    color: var(--primary);
   }
   #footer .right-section .lists ul h2 {
     position: relative;
@@ -1517,7 +1564,7 @@ html {
     font-size: 1.125rem;
     line-height: 1.16666667em;
     font-weight: bold;
-    color: #fff;
+    color: var(--primary);
   }
   #footer .right-section .lists ul h2:before {
     position: absolute;
@@ -1526,7 +1573,7 @@ html {
     content: "";
     opacity: 1;
     display: block;
-    background: #f7f7f7;
+    background: var(--primary);
     height: 0.125rem;
     width: 6.0625rem;
   }
@@ -1547,6 +1594,7 @@ html {
 @media only screen and (min-width: 64rem) {
   #footer {
     font-size: min(1.2vw, 1em);
+    position: relative;
   }
   #footer .container {
     display: flex;
@@ -1565,7 +1613,7 @@ html {
   }
   #footer .left-section .logo {
     margin-left: 0;
-    height: 9.375em;
+    height: 2.8125em;
     text-align: left;
   }
   #footer .left-section p {
