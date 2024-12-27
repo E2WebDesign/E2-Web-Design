@@ -72,8 +72,6 @@
     font-size: 1rem;
     line-height: 3.125em;
     font-weight: bold;
-    transition: color 0.3s;
-    transition-delay: 0.1s;
     text-align: center;
   }
   .cs-button-solid:hover {
@@ -1319,6 +1317,15 @@ html {
     margin: 0 0 2rem 0;
     opacity: 0.8;
   }
+  #cta-52 .cs-button-solid {
+    background: transparent;
+    color: var(--bodyTextColorWhite);
+    border: 2px solid var(--bodyTextColorWhite);
+  }
+  #cta-52 .cs-button-solid:hover {
+    color: #dcd9d9;
+    border: 2px solid #dcd9d9;
+  }
   #cta-52 .cs-picture {
     height: 100%;
     width: 100%;
@@ -1336,7 +1343,7 @@ html {
     height: 100%;
     width: 100%;
     background: #0d3b69;
-    opacity: 0.7;
+    opacity: 0.83;
     top: 0;
     left: 0;
     z-index: 1;

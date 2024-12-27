@@ -85,8 +85,9 @@
         font-weight: bold;
 
         // Transition Properties
-        transition: color 0.3s;
-        transition-delay: 0.1s;
+        // transition: color 0.3s;
+
+        // transition-delay: 0.1s;
         text-align: center;
 
         &:hover {
@@ -1608,6 +1609,17 @@ html {
             opacity: .8;
         }
 
+        .cs-button-solid {
+            background: transparent;
+            color: var(--bodyTextColorWhite);
+            border: 2px solid var(--bodyTextColorWhite);
+
+            &:hover {
+                color: #dcd9d9;
+                border: 2px solid #dcd9d9;
+            }
+        }
+
         .cs-picture {
             height: 100%;
             width: 100%;
@@ -1626,7 +1638,7 @@ html {
                 height: 100%;
                 width: 100%;
                 background: #0d3b69;
-                opacity: 0.7;
+                opacity: 0.83;
                 top: 0;
                 left: 0;
                 z-index: 1;
