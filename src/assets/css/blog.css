@@ -2,9 +2,6 @@
 /*-- -------------------------- -->
 <---        Core Styles         -->
 <--- -------------------------- -*/
-html {
-  background-color: #f7f7f7;
-}
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
   .blog-container {
@@ -16,42 +13,20 @@ html {
     z-index: 1;
     position: relative;
     display: inline-block;
-    border-radius: 0.25rem;
-    margin: auto;
-    background-color: var(--headerColor);
-    min-width: 9.375rem;
-    /* prevents padding from adding to the width */
-    box-sizing: border-box;
-    padding: 0 1.5rem;
+    background-color: var(--buttonBackgroundColor);
+    color: var(--buttonFontColor);
+    border-radius: 0.375rem;
+    width: auto;
+    padding: 0 1.875rem;
     text-decoration: none;
+    text-transform: uppercase;
     font-size: 1rem;
-    /* 46px - 56px */
-    line-height: clamp(2.875em, 5.5vw, 3.5em);
-    font-weight: 700;
-    color: #fff;
-    transition: color 0.3s;
+    line-height: 3.125em;
+    font-weight: bold;
     text-align: center;
   }
-  .blog-link:before {
-    z-index: -1;
-    position: absolute;
-    top: 0;
-    left: 0;
-    content: "";
-    opacity: 0;
-    border: 1px solid var(--headerColor);
-    border-radius: 0.25rem;
-    background: #fff;
-    height: 100%;
-    width: 100%;
-    box-sizing: border-box;
-    transition: opacity 0.3s;
-  }
   .blog-link:hover {
-    color: var(--headerColor);
-  }
-  .blog-link:hover:before {
-    opacity: 1;
+    background-color: var(--buttonHoverColor);
   }
 }
 /*-- -------------------------- -->
@@ -232,9 +207,9 @@ html {
     width: 100%;
     overflow: hidden;
     flex: none;
-    box-shadow: 2px 2px 10px #0000001b;
     border-radius: 1rem;
     background-color: white;
+    border: 1px solid #dad9e3;
   }
   .recent-articles .blog-mainImage {
     position: relative;
@@ -308,36 +283,17 @@ html {
     z-index: 1;
     position: relative;
     display: inline-block;
-    border-radius: 0.25rem;
-    margin: auto;
     background-color: var(--buttonBackgroundColor);
-    min-width: 9.375rem;
-    /* prevents padding from adding to the width */
-    box-sizing: border-box;
-    padding: 0 1.5rem;
+    color: var(--buttonFontColor);
+    border-radius: 0.375rem;
+    width: auto;
+    padding: 0 1.875rem;
     text-decoration: none;
+    text-transform: uppercase;
     font-size: 1rem;
-    /* 46px - 56px */
-    line-height: clamp(2.875em, 5.5vw, 3.5em);
-    font-weight: 700;
-    color: var(--buttonTextColor);
-    transition: color 0.3s;
+    line-height: 3.125em;
+    font-weight: bold;
     text-align: center;
-  }
-  .recent-articles .blog-link:before {
-    z-index: -1;
-    position: absolute;
-    top: 0;
-    left: 0;
-    content: "";
-    opacity: 0;
-    border: 1px solid var(--headerColor);
-    border-radius: 0.25rem;
-    background: #fff;
-    height: 100%;
-    width: 100%;
-    box-sizing: border-box;
-    transition: opacity 0.3s;
   }
   .recent-articles .blog-link:hover {
     background-color: var(--buttonHoverColor);
@@ -407,11 +363,10 @@ html {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    box-shadow: 2px 2px 10px #00000017;
     border-radius: 1em;
     width: 100%;
     padding: 2.1875em 1.875em;
-    background-color: white;
+    border: 1px solid #dad9e3;
   }
   .blog-sidebar .blog-header {
     position: relative;
