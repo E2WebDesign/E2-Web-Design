@@ -14,6 +14,7 @@ const monthlyItems = Array.from(document.querySelectorAll(".cs-monthly-only"));
             }
             toggle.classList.toggle("active");
         });
+
         option1.addEventListener('click', (e) => { 
             for (const item of optionGroup) {
                 item.classList.remove("option2-active");
@@ -24,6 +25,7 @@ const monthlyItems = Array.from(document.querySelectorAll(".cs-monthly-only"));
             toggle.classList.remove("active");
             monthlyItems.classList.remove("cs-disabled");
         });
+
         option2.addEventListener('click', (e) => { 
             for (const item of optionGroup) {
                 item.classList.add("option2-active");

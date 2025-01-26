@@ -1,0 +1,350 @@
+body,
+html {
+  overflow-x: visible;
+}
+/*-- -------------------------- -->
+<---        Content Page        -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #content-page-1401 {
+    padding: var(--sectionPadding);
+    background-color: #f7f7f7;
+    /* clips the wave background from causing overflow issues when it goes off screen */
+    position: relative;
+    z-index: 1;
+    overflow: visible;
+  }
+  #content-page-1401 .cs-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    max-width: 80rem;
+    width: 100%;
+    gap: clamp(2.5rem, 4vw, 4rem);
+  }
+  #content-page-1401 .cs-content {
+    /* set text align to left if content needs to be left aligned */
+    text-align: left;
+    width: 100%;
+    max-width: 46.125rem;
+    height: 100%;
+    /* Or a specific value like 500px */
+    overflow: visible;
+    /* Ensure no clipping on the parent */
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: flex-start;
+  }
+  #content-page-1401 .cs-bold {
+    font-weight: 900;
+  }
+  #content-page-1401 h2,
+  #content-page-1401 h3,
+  #content-page-1401 h4,
+  #content-page-1401 h5,
+  #content-page-1401 h6 {
+    font-weight: 700;
+    text-align: inherit;
+    margin: 0 0 1rem 0;
+    color: var(--headerColor);
+  }
+  #content-page-1401 h2 {
+    font-size: 2rem;
+    margin-top: 2rem;
+  }
+  #content-page-1401 h3 {
+    font-size: 1.5rem;
+    color: var(--primary);
+  }
+  #content-page-1401 h4,
+  #content-page-1401 h5,
+  #content-page-1401 h6 {
+    font-size: 1.25rem;
+  }
+  #content-page-1401 .cs-button-solid {
+    margin-bottom: 2rem;
+  }
+  #content-page-1401 .cs-no-margin {
+    margin: 0;
+  }
+  #content-page-1401 .cs-color {
+    color: var(--primary);
+  }
+  #content-page-1401 p {
+    font-size: var(--bodyFontSize);
+    line-height: 1.5em;
+    text-align: inherit;
+    width: 100%;
+    margin: 0 0 1rem 0;
+    color: var(--bodyTextColor);
+  }
+  #content-page-1401 p:last-of-type {
+    margin-bottom: 2rem;
+  }
+  #content-page-1401 p a {
+    font-size: inherit;
+    line-height: inherit;
+    text-decoration: underline;
+    color: var(--primary);
+    filter: brightness(120%);
+  }
+  #content-page-1401 ol,
+  #content-page-1401 ul {
+    padding-left: 1.5rem;
+    margin: 0 0 2rem 0;
+    color: var(--bodyTextColor);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  #content-page-1401 ul li {
+    list-style: none;
+    color: inherit;
+    position: relative;
+  }
+  #content-page-1401 ul li:before {
+    /* custom list bullet */
+    content: "";
+    width: 3px;
+    height: 3px;
+    background: currentColor;
+    opacity: 1;
+    border-radius: 50%;
+    position: absolute;
+    display: block;
+    top: 0.625rem;
+    left: -0.75rem;
+  }
+  #content-page-1401 img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  #content-page-1401 .cs-image-group {
+    position: relative;
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    gap: clamp(1rem, 2.6vw, 1.25rem);
+  }
+  #content-page-1401 .cs-flex {
+    position: relative;
+  }
+  #content-page-1401 .cs-background {
+    width: 100%;
+    /* 32px - 48px */
+    border-radius: 1.9rem;
+    /* clips the corners of the children around the border radius */
+    /* makes it cover the parent dimensions */
+    object-fit: cover;
+    display: block;
+    height: 25rem;
+  }
+  #content-page-1401 .cs-background img {
+    width: 100%;
+    height: 100%;
+    /* makes it cover the parent like a backgorund image */
+    object-fit: cover;
+    display: block;
+    border-radius: 1rem;
+  }
+  #content-page-1401 .cs-box {
+    text-align: left;
+    width: 100%;
+    max-width: 12.5rem;
+    padding: 2rem;
+    /* prevents padding from affecting height and width */
+    box-sizing: border-box;
+    background-color: var(--primary);
+    /* 48px - 80px */
+    border-radius: 0.5rem;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+    position: absolute;
+    /* 12px - 20px */
+    right: clamp(0.75rem, 1.9vw, 1.5rem);
+    /* 12px - 20px */
+    bottom: clamp(0.75rem, 1.9vw, 1.5rem);
+  }
+  #content-page-1401 .cs-box-icon {
+    width: 3.75rem;
+    height: auto;
+    display: block;
+  }
+  #content-page-1401 .cs-desc {
+    font-size: 1.25rem;
+    line-height: 1.2em;
+    text-align: inherit;
+    font-weight: 700;
+    width: 100%;
+    margin: 0;
+    color: var(--bodyTextColorWhite);
+  }
+  #content-page-1401 .cs-card-group {
+    width: 100%;
+    max-width: 39.375rem;
+    margin: 0 0 1.5rem 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15.265rem, 1fr));
+    align-items: center;
+    gap: clamp(1rem, 2vw, 1.25rem);
+  }
+  #content-page-1401 .cs-item {
+    list-style: none;
+    /* 16px - 24px */
+    padding: clamp(1rem, 3vw, 1.5rem);
+    /* prevents padding from affecting height and width */
+    box-sizing: border-box;
+    background-color: #fff;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+    box-shadow: 2px 2px 10px #0000000f;
+  }
+  #content-page-1401 .cs-item:before {
+    display: none;
+  }
+  #content-page-1401 .cs-h3 {
+    font-size: 1.25rem;
+    line-height: 1.2em;
+    font-weight: 700;
+    margin: 0;
+    color: var(--headerColor);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  #content-page-1401 .cs-h3-icon {
+    width: 1.875rem;
+    height: auto;
+    margin-right: 0.5rem;
+  }
+  #content-page-1401 .cs-item-text {
+    font-size: 0.875rem;
+    line-height: 1.5em;
+    margin: 0;
+    color: var(--bodyTextColor);
+  }
+  #content-page-1401 .cs-item-text:last-of-type {
+    margin: 0;
+  }
+  #content-page-1401 .cs-ul {
+    width: 100%;
+    margin: 0 0 1.5rem 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+  #content-page-1401 .cs-li {
+    font-size: var(--bodyFontSize);
+    list-style: none;
+    line-height: 1.5em;
+    width: 100%;
+    color: var(--bodyTextColor);
+    display: flex;
+    justify-content: flex-start;
+    /* push icon top the top so if the list item goes to two lines the icon stays at the top */
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  #content-page-1401 .cs-icon {
+    width: 1.5rem;
+    height: auto;
+    /* adds extra space between the icon and top of parent so it's more centered */
+    margin-top: 1px;
+    display: block;
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #content-page-1401 .cs-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  #content-page-1401 .cs-content {
+    width: 50%;
+    max-width: 42.125rem;
+    /* prevents flexbox from squishing it */
+    flex: none;
+  }
+  #content-page-1401 .cs-image-group {
+    order: 2;
+    position: sticky;
+    top: 12.5rem;
+    display: flex
+    ;
+    max-width: 33.875rem;
+    width: 44%;
+  }
+}
+/* Desktop - 1200px */
+@media only screen and (min-width: 75rem) {
+  #content-page-1401 .cs-content {
+    width: 53%;
+    height: 100%;
+    /* Or a specific value like 500px */
+    overflow: visible;
+    /* Ensure no clipping on the parent */
+  }
+  #content-page-1401 .cs-image-group {
+    width: 43%;
+  }
+  #content-page-1401 .cs-box {
+    display: flex;
+  }
+}
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+  body.dark-mode #content-page-1401 {
+    background-color: var(--dark);
+  }
+  body.dark-mode #content-page-1401 .cs-title,
+  body.dark-mode #content-page-1401 .cs-text,
+  body.dark-mode #content-page-1401 h2,
+  body.dark-mode #content-page-1401 h3,
+  body.dark-mode #content-page-1401 h4,
+  body.dark-mode #content-page-1401 h5,
+  body.dark-mode #content-page-1401 h6,
+  body.dark-mode #content-page-1401 li,
+  body.dark-mode #content-page-1401 p {
+    color: var(--bodyTextColorWhite);
+  }
+  body.dark-mode #content-page-1401 .cs-color,
+  body.dark-mode #content-page-1401 a {
+    color: var(--primaryLight);
+  }
+  body.dark-mode #content-page-1401 p,
+  body.dark-mode #content-page-1401 li {
+    color: #ebebeb;
+  }
+  body.dark-mode #content-page-1401 .cs-item {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-color: rgba(255, 255, 255, 0.2);
+  }
+  body.dark-mode #content-page-1401 .cs-h3 {
+    color: var(--bodyTextColorWhite);
+  }
+  body.dark-mode #content-page-1401 .cs-icon {
+    filter: grayscale(1) brightness(1000%);
+  }
+  body.dark-mode #content-page-1401 .cs-picture {
+    border-color: var(--dark);
+    background-color: var(--dark);
+  }
+  body.dark-mode #content-page-1401 .cs-bubbles:before {
+    border-color: rgba(255, 255, 255, 0.2);
+  }
+}

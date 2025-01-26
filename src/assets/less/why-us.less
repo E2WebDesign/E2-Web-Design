@@ -9,6 +9,7 @@
 
     #services-1131 {
         padding: var(--sectionPadding);
+        background-color: #f7f7f7;
 
         .cs-container {
             width: 100%;
@@ -49,7 +50,7 @@
             /* 24px - 32px */
             padding: clamp(1.5rem, 3vw, 2rem);
             background-color: #fff;
-            border: 1px solid #e8e8e8;
+            box-shadow: 2px 2px 10px #0000001e;
             border-radius: (16/16rem);
             /* prevents padding and border from affecting height and width */
             box-sizing: border-box;
@@ -68,15 +69,12 @@
             &:hover {
                 box-shadow: 0px 4px 120px 0px rgba(0, 0, 0, 0.12);
                 border-color: transparent;
-                .cs-h3 {
-                    color: var(--primary);
-                }
             }
         }
 
         .cs-image-group {
-            width: (100/16rem);
-            height: auto;
+            width: (60/16rem);
+            height: (60/16rem);
             /* 20px - 24px */
             margin: 0 0 clamp(1.25rem, 2.5vw, 1.5rem);
             display: flex;
@@ -85,11 +83,14 @@
             /* prevents flexbox from squishing it */
             flex: none;
             position: relative;
+            background-color: var(--svgBackground);
+            border-radius: 50%;
         }
 
         .cs-icon {
-            width: (48/16rem);
+            width: (40/16rem);
             height: auto;
+        
         }
 
         .cs-h3 {
@@ -186,7 +187,7 @@
 @media only screen and (min-width: 0rem) {
     #steps-284 {
         padding: var(--sectionPadding);
-        background-color: #f7f7f7;
+        // background-color: #f7f7f7;
 
         .cs-container {
             width: 100%;
@@ -311,9 +312,10 @@
             width: clamp(2.5rem, 5.1vw, 3.25rem);
             height: clamp(2.5rem, 5.1vw, 3.25rem);
             border-radius: 50%;
+            box-shadow: 2px 2px 10px #00000011;
             border: 2px solid var(--primary);
             color: var(--headerColor);
-            background-color: transparent;
+            // background-color: white;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -431,6 +433,7 @@
     #meet-team-1141 {
         padding: var(--sectionPadding);
         overflow: hidden;
+        background-color: #f7f7f7;
 
         .cs-container {
             width: 100%;
@@ -508,8 +511,8 @@
             overflow: hidden;
             display: block;
             position: relative;
-            border: clamp(0.375em, 1.5vw, 0.75em) solid #f7f7f7;
-            background-color: #f7f7f7;
+            border: clamp(0.375em, 1.5vw, 0.75em) solid white;
+            background-color: white;
             z-index: 1;
             
 
@@ -674,7 +677,6 @@
 @media only screen and (min-width: 0rem) {
     #faq-326 {
         padding: var(--sectionPadding);
-        background-color: var(--offSet);
 
         .cs-container {
             width: 100%;
@@ -845,6 +847,8 @@
         text-align: center;
         display: flex;
         justify-content: center;
+        background-color: var(--offSet);
+
 
 
         .cs-container {

@@ -8,21 +8,22 @@
 @media only screen and (min-width: 0rem) {
     // Website colors
     :root {
-        --primary: #0353a4;
-        --primaryLight: #0c0d0f;
-        --primaryDark: #001f3f;
+        --primary: #0070e0;
+        --primaryLight: #0280ff;
+        --primaryDark: #0665c5;
         --secondary: #c1c258;
         --secondaryDark: #a0a249;
         --offSet: #f7f7f7;
-        --svgBackground: #3d73a21f;
-        --svgBackgroundAlt: #0353a4;
-        --headerColor: #1a1a1a;
-        --bodyTextColor: #4e4b66;
+        --svgBackground: #0281ff20;
+        --svgBackgroundAlt: linear-gradient(to right, #0070e0, #0280ff);
+        --headerColor: #404040;
+        --bodyTextColor: #404040;
         --bodyTextColorWhite: #fafbfc;
-        --buttonBackgroundColor: #0353a4;
+        --buttonBackgroundColor: #0070e0;
         --buttonFontColor: #fff;
-        --buttonHoverColor: #00478e;
-        --buttonTextColor: #000;
+        --buttonHoverColor: #0280ff;
+        --buttonTextColor: #4D4D4D;
+
 
         /* 13px - 16px */
         --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
@@ -98,23 +99,27 @@
     .cs-button-transparent {
         z-index: 1;
         position: relative;
-        display: inline-flex;
-        justify-content: center;
-        align-items: center;
-        border: 1px solid var(--bodyTextColorWhite);
-        margin: 0 (8/16rem);
-        background-color: transparent;
+        display: inline-block;
+        background-color: var(--buttonBackgroundColor);
+        color: var(--buttonFontColor);
         border-radius: (6/16rem);
-        /* 46px - 56px */
-        width: (180/16rem);
-        box-sizing: border-box;
-        padding: 0;
+        width: auto;
+        padding: 0 (30/16rem);
         text-decoration: none;
+        text-transform: uppercase;
         font-size: (16/16rem);
-        /* 46px - 56px */
-        line-height: (47/16em);
-        font-weight: 700;
-        color: #fff;
+        line-height: (50/16em);
+        font-weight: bold;
+
+        // Transition Properties
+        // transition: color 0.3s;
+
+        // transition-delay: 0.1s;
+        text-align: center;
+
+        &:hover {
+            background-color: var(--buttonHoverColor);
+        }
 
         .cs-img {
             display: block;
@@ -395,9 +400,12 @@ html {
         width: 100%;
         /* prevents padding and border from affecting height and width */
         box-sizing: border-box;
-        background-color: var(--bodyTextColorWhite);
+        background-color: white;
         position: fixed;
         z-index: 10000;
+        box-shadow: 2px 2px 10px #017cf626;
+        border-bottom-right-radius: 1rem;
+        border-bottom-left-radius: 1rem;
 
         &:before {
             content: "";
@@ -514,7 +522,7 @@ html {
             text-decoration: none;
             width: (32/16rem);
             height: (32/16rem);
-            background-color: var(--svgBackgroundAlt);
+            background: var(--svgBackgroundAlt);
             border-radius: 50%;
             display: flex;
             justify-content: center;
@@ -549,7 +557,7 @@ html {
         .cs-logo {
             width: auto;
             /* 32px - 48px */
-            height: 2rem;
+            height: 4rem;
             width: auto;
             /* 32px - 48px */
             margin: 0 auto 0 0;
@@ -837,7 +845,7 @@ html {
         }
 
         .cs-logo {
-            height: 2rem;
+            height: 5rem;
         }
     }
 }
@@ -1265,7 +1273,7 @@ html {
             color: transparent;
             width: (32/16rem);
             height: (32/16rem);
-            background-color: var(--svgBackgroundAlt);
+            background: var(--svgBackgroundAlt);
             border-radius: 50%;
             display: flex;
             justify-content: center;
@@ -1609,17 +1617,6 @@ html {
             opacity: .8;
         }
 
-        .cs-button-solid {
-            background: transparent;
-            color: var(--bodyTextColorWhite);
-            border: 2px solid var(--bodyTextColorWhite);
-
-            &:hover {
-                color: #dcd9d9;
-                border: 2px solid #dcd9d9;
-            }
-        }
-
         .cs-picture {
             height: 100%;
             width: 100%;
@@ -1637,7 +1634,7 @@ html {
                 display: block;
                 height: 100%;
                 width: 100%;
-                background: #0d3b69;
+                background: #0050a0;
                 opacity: 0.83;
                 top: 0;
                 left: 0;
@@ -1679,7 +1676,7 @@ html {
                 display: inline-block;
                 margin: auto;
                 margin-bottom: (30/16em);
-                height: 2rem;
+                height: 10rem;
                 width: auto;
                 text-align: center;
 
@@ -1696,7 +1693,7 @@ html {
                 width: 100%;
                 font-size: (14/16rem);
                 line-height: (27/14rem);
-                color: var(--primary);
+                color: var(--headerColor);
                 text-align: center;
             }
         }
@@ -1726,15 +1723,15 @@ html {
                         margin-bottom: (12/16rem);
                         list-style: none;
                         font-size: (18/16rem);
-                        color: var(--primary);
+                        color: var(--headerColor);
 
                         a {
                             text-decoration: none;
                             line-height: (21/18em);
-                            color: var(--primary);
+                            color: var(--headerColor);
                             transition: color 0.3s;
                             &:hover {
-                                color: var(--primary);
+                                color: var(--headerColor);
                             }
                         }
                     }
@@ -1745,7 +1742,7 @@ html {
                         font-size: (18/16rem);
                         line-height: (21/18em);
                         font-weight: bold;
-                        color: var(--primary);
+                        color: var(--headerColor);
 
                         &:before {
                             position: absolute;
@@ -1754,7 +1751,7 @@ html {
                             content: "";
                             opacity: 1;
                             display: block;
-                            background: var(--primary);
+                            background: var(--headerColor);
                             height: (2/16rem);
                             width: (97/16rem);
                         }
@@ -1795,13 +1792,13 @@ html {
             width: 96%;
             font-size: (16/16rem);
             line-height: (36/16rem);
-            color:var(--primary);
+            color:var(--headerColor);
             text-align: center;
 
             a {
                 text-decoration: none;
                 font-size: (16/16rem);
-                color: var(--primary);
+                color: var(--headerColor);
 
                 &:hover {
                     text-decoration: underline;
@@ -1846,15 +1843,15 @@ html {
                         margin-bottom: (12/16rem);
                         list-style: none;
                         font-size: (18/16rem);
-                        color: var(--primary);
+                        color: var(--headerColor);
 
                         a {
                             text-decoration: none;
                             line-height: (21/18em);
-                            color:var(--primary);
+                            color:var(--headerColor);
                             transition: color 0.3s;
                             &:hover {
-                                color: var(--primary);
+                                color: var(--headerColor);
                             }
                         }
                     }
@@ -1867,7 +1864,7 @@ html {
                         font-size: (18/16rem);
                         line-height: (21/18em);
                         font-weight: bold;
-                        color: var(--primary);
+                        color: var(--headerColor);
 
                         &:before {
                             position: absolute;
@@ -1876,7 +1873,7 @@ html {
                             content: "";
                             opacity: 1;
                             display: block;
-                            background:var(--primary);
+                            background:var(--headerColor);
                             height: (2/16rem);
                             width: (97/16rem);
                         }
@@ -1925,7 +1922,7 @@ html {
 
             .logo {
                 margin-left: 0;
-                height: 2rem;
+                height: 8rem;
                 text-align: left;
             }
 
@@ -1960,7 +1957,7 @@ html {
                                 content: "";
                                 opacity: 1;
                                 display: block;
-                                background: var(--primary);
+                                background: var(--headerColor);
                                 height: (2/16rem);
                                 width: 0%;
                                 transition: width 0.3s;
