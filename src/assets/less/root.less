@@ -1160,6 +1160,8 @@ html {
 @media only screen and (min-width: 64rem) {
     body {
         &.scroll {
+            #cs-navigation {
+
                 .cs-top-container {
                     visibility: hidden;
                     opacity: 0;
@@ -1590,7 +1592,6 @@ html {
             /* 48px - 64px */
             gap: clamp(3rem, 6vw, 4rem);
             position: relative;
-            border: clamp(0.375em, 1.5vw, 0.75em) solid #fff;
             border-radius: (32/16rem);
         }
 
@@ -1606,7 +1607,7 @@ html {
         }
 
         .cs-title, .cs-text {
-            color: var(--bodyTextColorWhite);
+            color: #fff;
         }
 
         .cs-text {
@@ -1631,8 +1632,8 @@ html {
                 display: block;
                 height: 100%;
                 width: 100%;
-                background: #0050a0;
-                opacity: 0.83;
+                background: #0280ff;
+                opacity: 0.7;
                 top: 0;
                 left: 0;
                 z-index: 1;
