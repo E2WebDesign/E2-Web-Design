@@ -137,14 +137,3 @@
     grid-column: span 6;
   }
 }
-/* Dark Mode */
-@media only screen and (min-width: 0rem) {
-  body.dark-mode #gallery-1374 .cs-title,
-  body.dark-mode #gallery-1374 .cs-text,
-  body.dark-mode #gallery-1374 .cs-h3 {
-    color: var(--bodyTextColorWhite);
-  }
-  body.dark-mode #gallery-1374 .cs-text {
-    opacity: 0.8;
-  }
-}

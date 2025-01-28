@@ -428,38 +428,3 @@
     column-gap: 6.875rem;
   }
 }
-/* Dark Mode */
-@media only screen and (min-width: 0rem) {
-  body.dark-mode #pricing-387 {
-    background-color: var(--dark);
-  }
-  body.dark-mode #pricing-387 .cs-topper {
-    color: var(--primaryLight);
-  }
-  body.dark-mode #pricing-387 .cs-title,
-  body.dark-mode #pricing-387 .cs-text {
-    color: var(--bodyTextColorWhite);
-  }
-  body.dark-mode #pricing-387 .cs-plan {
-    color: var(--bodyTextColorWhite);
-  }
-  body.dark-mode #pricing-387 .cs-item {
-    background: var(--accent);
-    border-color: var(--medium);
-  }
-  body.dark-mode #pricing-387 .cs-popular {
-    background: var(--primary);
-  }
-  body.dark-mode #pricing-387 .cs-h3,
-  body.dark-mode #pricing-387 .cs-item-text,
-  body.dark-mode #pricing-387 .cs-price,
-  body.dark-mode #pricing-387 .cs-included,
-  body.dark-mode #pricing-387 .cs-li,
-  body.dark-mode #pricing-387 .cs-small {
-    color: var(--bodyTextColorWhite);
-  }
-  body.dark-mode #pricing-387 .cs-li-img {
-    /* make so bright it turns white */
-    filter: brightness(900%) grayscale(1);
-  }
-}

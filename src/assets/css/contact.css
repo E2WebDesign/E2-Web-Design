@@ -257,31 +257,3 @@
     height: 36.25rem;
   }
 }
-/* Dark Mode */
-@media only screen and (min-width: 0rem) {
-  body.dark-mode #cs-contact-242 .cs-text,
-  body.dark-mode #cs-contact-242 .cs-title {
-    color: var(--bodyTextColorWhite);
-  }
-  body.dark-mode #cs-contact-242 #cs-form-242 label,
-  body.dark-mode #cs-contact-242 #cs-form-242 input,
-  body.dark-mode #cs-contact-242 #cs-form-242 textarea {
-    background-color: transparent;
-    color: var(--bodyTextColorWhite);
-  }
-  body.dark-mode #cs-contact-242 #cs-form-242 label::placeholder,
-  body.dark-mode #cs-contact-242 #cs-form-242 input::placeholder,
-  body.dark-mode #cs-contact-242 #cs-form-242 textarea::placeholder {
-    /* lighten up the color of the text by 90%*/
-    filter: brightness(1.9);
-    color: var(--bodyTextColorWhite);
-  }
-  body.dark-mode #cs-contact-242 .cs-icon {
-    /* makes it so bright it turns white */
-    filter: brightness(900%);
-  }
-  body.dark-mode #cs-contact-242 .cs-header,
-  body.dark-mode #cs-contact-242 .cs-link {
-    color: var(--bodyTextColorWhite);
-  }
-}

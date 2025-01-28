@@ -20,9 +20,12 @@
         --bodyTextColor: #404040;
         --bodyTextColorWhite: #fafbfc;
         --buttonBackgroundColor: #0070e0;
-        --buttonFontColor: #fff;
+        --buttonBackgroundWhite: #fff;
         --buttonHoverColor: #0280ff;
-        --buttonTextColor: #4D4D4D;
+        --buttonWhiteHoverColor: var(--primary);
+        --buttonWhiteHoverTextColor: #fff;
+        --buttonTextColor: #fff;
+        --buttonWhiteTextColor: var(--primary);
 
 
         /* 13px - 16px */
@@ -75,7 +78,7 @@
         position: relative;
         display: inline-block;
         background-color: var(--buttonBackgroundColor);
-        color: var(--buttonFontColor);
+        color: var(--buttonTextColor);
         border-radius: (6/16rem);
         width: auto;
         padding: 0 (30/16rem);
@@ -96,12 +99,12 @@
         }
     }
 
-    .cs-button-transparent {
+    .cs-button-white {
         z-index: 1;
         position: relative;
         display: inline-block;
-        background-color: var(--buttonBackgroundColor);
-        color: var(--buttonFontColor);
+        background-color: var(--buttonBackgroundWhite);
+        color: var(--buttonWhiteTextColor);
         border-radius: (6/16rem);
         width: auto;
         padding: 0 (30/16rem);
@@ -110,29 +113,11 @@
         font-size: (16/16rem);
         line-height: (50/16em);
         font-weight: bold;
-
-        // Transition Properties
-        // transition: color 0.3s;
-
-        // transition-delay: 0.1s;
         text-align: center;
 
         &:hover {
-            background-color: var(--buttonHoverColor);
-        }
-
-        .cs-img {
-            display: block;
-            margin-right: (12/16rem);
-        }
-
-        &:hover {
-            background-color: white;
-            color: var(--headerColor);
-
-            .cs-img {
-                fill: #000;
-            }
+            background-color: var(--buttonWhiteHoverColor);
+            color: var(--buttonWhiteHoverTextColor);
         }
     }
 
@@ -265,100 +250,6 @@
     body,
     html {
         font-size: 0.55vw;
-    }
-}
-
-
-
-/*-- -------------------------- -->
-<---      Dark Mode Toggle      -->
-<--- -------------------------- -*/
-
-/* Mobile - 360px */
-@media only screen and (min-width: 0rem) {
-    body.dark-mode {
-        #dark-mode-toggle {
-            .cs-sun {
-                transform: translate(-50%, -50%);
-                opacity: 1;
-            }
-
-            .cs-moon {
-                transform: translate(-50%, -150%);
-                opacity: 0;
-            }
-        }
-    }
-
-    #dark-mode-toggle {
-        z-index: 1000;
-        position: absolute;
-        bottom: 1.25rem;
-        right: 5rem;
-        display: block;
-        border: none;
-        background: transparent;
-        height: 3rem;
-        width: 3rem;
-        overflow: hidden;
-        padding: 0;
-
-        img,
-        svg {
-            //center image inside button
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: (20/16rem);
-            height: (20/16rem);
-            pointer-events: none;
-        }
-
-        .cs-moon {
-            z-index: 2;
-            // Transition properties
-            transition:
-                transform 0.3s,
-                opacity 0.3s;
-            fill: #1a1a1a;
-        }
-
-        .cs-sun {
-            z-index: 1;
-            // Transition property
-            transform: translate(-50%, 100%);
-            opacity: 0;
-            transition:
-                transform 0.3s,
-                opacity 0.3s;
-        }
-    }
-}
-
-/* Tablet - 768px */
-@media only screen and (min-width: 48rem) {
-    #dark-mode-toggle {
-        margin-left: (16/16rem);
-        position: relative;
-        bottom: auto;
-        right: auto;
-        order: 3;
-    }
-}
-
-/* Desktop - 1024px */
-@media only screen and (min-width: 64rem) {
-    #dark-mode-toggle {
-        position: relative;
-        transform: none;
-        bottom: auto;
-        right: auto;
-        margin: 0;
-
-        &:hover {
-            cursor: pointer;
-        }
     }
 }
 
@@ -850,46 +741,6 @@ html {
     }
 }
 
-/* Dark Mode */
-@media only screen and (max-width: 63.9375rem) {
-    body.dark-mode {
-        #cs-navigation {
-            background-color: var(--dark);
-
-            .cs-logo {
-                /* makes it white */
-                filter: grayscale(1) brightness(1000%);
-            }
-
-            .cs-social-link {
-                background-color: var(--primary);
-                &:hover {
-                    background-color: #fff;
-                }
-            }
-
-            .cs-top-link,
-            .cs-desc {
-                color: var(--bodyTextColorWhite);
-                opacity: 0.8;
-            }
-
-            .cs-link-icon {
-                filter: grayscale(1) brightness(1000%);
-            }
-
-            .cs-ul-wrapper {
-                background-color: var(--medium);
-            }
-
-            .cs-li-link,
-            .cs-header {
-                color: var(--bodyTextColorWhite);
-            }
-        }
-    }
-}
-
 /*-- -------------------------- -->
 <---     Navigation Dropdown    -->
 <--- -------------------------- -*/
@@ -1124,30 +975,6 @@ html {
             font-size: inherit;
             cursor: pointer;
             appearance: none;
-        }
-    }
-}
-
-/* Dark Mode */
-@media only screen and (min-width: 64rem) {
-    body.dark-mode {
-        #cs-navigation {
-            .cs-drop-ul {
-                background-color: var(--dark);
-            }
-
-            .cs-li-link {
-                &.cs-drop-link {
-                    &:hover {
-                        color: var(--bodyTextColorWhite);
-                        background-color: rgba(255, 255, 255, 0.2);
-                    }
-
-                    &:before {
-                        display: none;
-                    }
-                }
-            }
         }
     }
 }
@@ -1435,46 +1262,6 @@ html {
     }
 }
 
-/* Dark Mode */
-@media only screen and (min-width: 64rem) {
-    body.dark-mode {
-        #cs-navigation {
-            background-color: var(--dark);
-
-            .cs-li-link,
-            .cs-top-link,
-            .cs-header,
-            .cs-desc {
-                color: var(--bodyTextColorWhite);
-            }
-
-            .cs-li-link,
-            .cs-top-link {
-                &:hover {
-                    color: var(--primary);
-                }
-            }
-
-            .cs-desc,
-            .cs-top-link {
-                opacity: 0.8;
-            }
-
-            .cs-social-link {
-                // background-color: var(--primary);
-            }
-
-            .cs-logo,
-            .cs-link-icon {
-                /* turns it white */
-                filter: grayscale(1) brightness(1000%);
-            }
-        }
-    }
-}
-
-                                
-
 /*-- -------------------------- -->
 <---   Interior Page Header     -->
 <--- -------------------------- -*/
@@ -1652,8 +1439,7 @@ html {
         }
     }
 }
-                                
-
+ 
 /*-- -------------------------- -->
 <---           Footer           -->
 <--- -------------------------- -*/
@@ -1987,15 +1773,6 @@ html {
             .copyright {
                 display: inline-block;
             }
-        }
-    }
-}
-
-/* Dark Mode */
-@media only screen and (min-width: 0rem) {
-    body.dark-mode {
-        #footer {
-            background: #061623;
         }
     }
 }

@@ -146,9 +146,6 @@
     }
 }
 
-                                
-                                
-
 /*-- -------------------------- -->
 <---           Steps            -->
 <--- -------------------------- -*/
@@ -375,25 +372,6 @@
     }
 }
 
-/* Dark Mode */
-@media only screen and (min-width: 0rem) {
-    body.dark-mode {
-        #steps-284 {
-            .cs-title,
-            .cs-text,
-            .cs-number {
-                color: var(--bodyTextColorWhite);
-            }
-
-            .cs-item-text {
-                &:after {
-                    border: 12px solid var(--dark);
-                }
-            }
-        }
-    }
-}
-
 /*-- -------------------------- -->
 <---       Meet The Team        -->
 <--- -------------------------- -*/
@@ -609,31 +587,6 @@
             /* prevents flexbox from squishing it */
             display: block;
             flex: none;
-        }
-    }
-}
-
-/* Dark Mode */
-@media only screen and (min-width: 0rem) {
-    body.dark-mode {
-        #meet-team-1141 {
-            .cs-topper {
-                color: var(--secondary);
-            }
-
-            .cs-title,
-            .cs-name,
-            .cs-job {
-                color: var(--bodyTextColorWhite);
-            }
-
-            .cs-job {
-                opacity: 0.8;
-            }
-
-            .cs-info {
-                background-color: var(--medium);
-            }
         }
     }
 }
@@ -932,28 +885,6 @@
         .cs-item {
             /* reset margin so it won't interfere with flexbox */
             margin: 0;
-        }
-    }
-}
-
-/* Dark Mode */
-@media only screen and (min-width: 0rem) {
-    body.dark-mode {
-        #reviews {
-            .cs-title,
-            .cs-text,
-            .cs-item-p,
-            .cs-reviewer {
-                color: var(--bodyTextColorWhite);
-            }
-
-            .cs-item {
-                background: var(--medium);
-            }
-
-            .cs-desc {
-                color: var(--primaryLight);
-            }
         }
     }
 }

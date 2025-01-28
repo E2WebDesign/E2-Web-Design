@@ -314,17 +314,6 @@
     margin-top: calc(clamp(1.25rem, 2vw, 1.5625rem) * -1);
   }
 }
-/* Dark Mode */
-@media only screen and (min-width: 0rem) {
-  body.dark-mode #steps-284 .cs-title,
-  body.dark-mode #steps-284 .cs-text,
-  body.dark-mode #steps-284 .cs-number {
-    color: var(--bodyTextColorWhite);
-  }
-  body.dark-mode #steps-284 .cs-item-text:after {
-    border: 12px solid var(--dark);
-  }
-}
 /*-- -------------------------- -->
 <---       Meet The Team        -->
 <--- -------------------------- -*/
@@ -506,23 +495,6 @@
     /* prevents flexbox from squishing it */
     display: block;
     flex: none;
-  }
-}
-/* Dark Mode */
-@media only screen and (min-width: 0rem) {
-  body.dark-mode #meet-team-1141 .cs-topper {
-    color: var(--secondary);
-  }
-  body.dark-mode #meet-team-1141 .cs-title,
-  body.dark-mode #meet-team-1141 .cs-name,
-  body.dark-mode #meet-team-1141 .cs-job {
-    color: var(--bodyTextColorWhite);
-  }
-  body.dark-mode #meet-team-1141 .cs-job {
-    opacity: 0.8;
-  }
-  body.dark-mode #meet-team-1141 .cs-info {
-    background-color: var(--medium);
   }
 }
 /*-- -------------------------- -->
@@ -777,20 +749,5 @@
   #reviews .cs-item {
     /* reset margin so it won't interfere with flexbox */
     margin: 0;
-  }
-}
-/* Dark Mode */
-@media only screen and (min-width: 0rem) {
-  body.dark-mode #reviews .cs-title,
-  body.dark-mode #reviews .cs-text,
-  body.dark-mode #reviews .cs-item-p,
-  body.dark-mode #reviews .cs-reviewer {
-    color: var(--bodyTextColorWhite);
-  }
-  body.dark-mode #reviews .cs-item {
-    background: var(--medium);
-  }
-  body.dark-mode #reviews .cs-desc {
-    color: var(--primaryLight);
   }
 }

@@ -17,9 +17,12 @@
     --bodyTextColor: #404040;
     --bodyTextColorWhite: #fafbfc;
     --buttonBackgroundColor: #0070e0;
-    --buttonFontColor: #fff;
+    --buttonBackgroundWhite: #fff;
     --buttonHoverColor: #0280ff;
-    --buttonTextColor: #4D4D4D;
+    --buttonWhiteHoverColor: var(--primary);
+    --buttonWhiteHoverTextColor: #fff;
+    --buttonTextColor: #fff;
+    --buttonWhiteTextColor: var(--primary);
     /* 13px - 16px */
     --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
     /* 31px - 49px */
@@ -63,7 +66,7 @@
     position: relative;
     display: inline-block;
     background-color: var(--buttonBackgroundColor);
-    color: var(--buttonFontColor);
+    color: var(--buttonTextColor);
     border-radius: 0.375rem;
     width: auto;
     padding: 0 1.875rem;
@@ -77,12 +80,12 @@
   .cs-button-solid:hover {
     background-color: var(--buttonHoverColor);
   }
-  .cs-button-transparent {
+  .cs-button-white {
     z-index: 1;
     position: relative;
     display: inline-block;
-    background-color: var(--buttonBackgroundColor);
-    color: var(--buttonFontColor);
+    background-color: var(--buttonBackgroundWhite);
+    color: var(--buttonWhiteTextColor);
     border-radius: 0.375rem;
     width: auto;
     padding: 0 1.875rem;
@@ -93,19 +96,9 @@
     font-weight: bold;
     text-align: center;
   }
-  .cs-button-transparent:hover {
-    background-color: var(--buttonHoverColor);
-  }
-  .cs-button-transparent .cs-img {
-    display: block;
-    margin-right: 0.75rem;
-  }
-  .cs-button-transparent:hover {
-    background-color: white;
-    color: var(--headerColor);
-  }
-  .cs-button-transparent:hover .cs-img {
-    fill: #000;
+  .cs-button-white:hover {
+    background-color: var(--buttonWhiteHoverColor);
+    color: var(--buttonWhiteHoverTextColor);
   }
   .cs-hide-on-mobile {
     display: none;
@@ -218,77 +211,6 @@
   body,
   html {
     font-size: 0.55vw;
-  }
-}
-/*-- -------------------------- -->
-<---      Dark Mode Toggle      -->
-<--- -------------------------- -*/
-/* Mobile - 360px */
-@media only screen and (min-width: 0rem) {
-  body.dark-mode #dark-mode-toggle .cs-sun {
-    transform: translate(-50%, -50%);
-    opacity: 1;
-  }
-  body.dark-mode #dark-mode-toggle .cs-moon {
-    transform: translate(-50%, -150%);
-    opacity: 0;
-  }
-  #dark-mode-toggle {
-    z-index: 1000;
-    position: absolute;
-    bottom: 1.25rem;
-    right: 5rem;
-    display: block;
-    border: none;
-    background: transparent;
-    height: 3rem;
-    width: 3rem;
-    overflow: hidden;
-    padding: 0;
-  }
-  #dark-mode-toggle img,
-  #dark-mode-toggle svg {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 1.25rem;
-    height: 1.25rem;
-    pointer-events: none;
-  }
-  #dark-mode-toggle .cs-moon {
-    z-index: 2;
-    transition: transform 0.3s, opacity 0.3s;
-    fill: #1a1a1a;
-  }
-  #dark-mode-toggle .cs-sun {
-    z-index: 1;
-    transform: translate(-50%, 100%);
-    opacity: 0;
-    transition: transform 0.3s, opacity 0.3s;
-  }
-}
-/* Tablet - 768px */
-@media only screen and (min-width: 48rem) {
-  #dark-mode-toggle {
-    margin-left: 1rem;
-    position: relative;
-    bottom: auto;
-    right: auto;
-    order: 3;
-  }
-}
-/* Desktop - 1024px */
-@media only screen and (min-width: 64rem) {
-  #dark-mode-toggle {
-    position: relative;
-    transform: none;
-    bottom: auto;
-    right: auto;
-    margin: 0;
-  }
-  #dark-mode-toggle:hover {
-    cursor: pointer;
   }
 }
 /*-- -------------------------- -->
@@ -692,37 +614,6 @@ html {
     height: 5rem;
   }
 }
-/* Dark Mode */
-@media only screen and (max-width: 63.9375rem) {
-  body.dark-mode #cs-navigation {
-    background-color: var(--dark);
-  }
-  body.dark-mode #cs-navigation .cs-logo {
-    /* makes it white */
-    filter: grayscale(1) brightness(1000%);
-  }
-  body.dark-mode #cs-navigation .cs-social-link {
-    background-color: var(--primary);
-  }
-  body.dark-mode #cs-navigation .cs-social-link:hover {
-    background-color: #fff;
-  }
-  body.dark-mode #cs-navigation .cs-top-link,
-  body.dark-mode #cs-navigation .cs-desc {
-    color: var(--bodyTextColorWhite);
-    opacity: 0.8;
-  }
-  body.dark-mode #cs-navigation .cs-link-icon {
-    filter: grayscale(1) brightness(1000%);
-  }
-  body.dark-mode #cs-navigation .cs-ul-wrapper {
-    background-color: var(--medium);
-  }
-  body.dark-mode #cs-navigation .cs-li-link,
-  body.dark-mode #cs-navigation .cs-header {
-    color: var(--bodyTextColorWhite);
-  }
-}
 /*-- -------------------------- -->
 <---     Navigation Dropdown    -->
 <--- -------------------------- -*/
@@ -916,19 +807,6 @@ html {
     font-size: inherit;
     cursor: pointer;
     appearance: none;
-  }
-}
-/* Dark Mode */
-@media only screen and (min-width: 64rem) {
-  body.dark-mode #cs-navigation .cs-drop-ul {
-    background-color: var(--dark);
-  }
-  body.dark-mode #cs-navigation .cs-li-link.cs-drop-link:hover {
-    color: var(--bodyTextColorWhite);
-    background-color: rgba(255, 255, 255, 0.2);
-  }
-  body.dark-mode #cs-navigation .cs-li-link.cs-drop-link:before {
-    display: none;
   }
 }
 /*-- -------------------------- -->
@@ -1161,31 +1039,6 @@ html {
 @media only screen and (min-width: 100rem) {
   #cs-navigation .cs-nav-button {
     margin: 0;
-  }
-}
-/* Dark Mode */
-@media only screen and (min-width: 64rem) {
-  body.dark-mode #cs-navigation {
-    background-color: var(--dark);
-  }
-  body.dark-mode #cs-navigation .cs-li-link,
-  body.dark-mode #cs-navigation .cs-top-link,
-  body.dark-mode #cs-navigation .cs-header,
-  body.dark-mode #cs-navigation .cs-desc {
-    color: var(--bodyTextColorWhite);
-  }
-  body.dark-mode #cs-navigation .cs-li-link:hover,
-  body.dark-mode #cs-navigation .cs-top-link:hover {
-    color: var(--primary);
-  }
-  body.dark-mode #cs-navigation .cs-desc,
-  body.dark-mode #cs-navigation .cs-top-link {
-    opacity: 0.8;
-  }
-  body.dark-mode #cs-navigation .cs-logo,
-  body.dark-mode #cs-navigation .cs-link-icon {
-    /* turns it white */
-    filter: grayscale(1) brightness(1000%);
   }
 }
 /*-- -------------------------- -->
@@ -1635,11 +1488,5 @@ html {
   }
   #footer .credit .copyright {
     display: inline-block;
-  }
-}
-/* Dark Mode */
-@media only screen and (min-width: 0rem) {
-  body.dark-mode #footer {
-    background: #061623;
   }
 }

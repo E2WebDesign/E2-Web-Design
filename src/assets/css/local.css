@@ -109,32 +109,6 @@
     grid-column: span 4;
   }
 }
-/* Dark Mode */
-@media only screen and (min-width: 0rem) {
-  body.dark-mode #services-1176 .cs-item {
-    background-color: var(--medium);
-    border-color: rgba(255, 255, 255, 0.2);
-  }
-  body.dark-mode #services-1176 .cs-item:hover .cs-h3 {
-    color: var(--primary);
-  }
-  body.dark-mode #services-1176 .cs-topper {
-    color: var(--primary);
-  }
-  body.dark-mode #services-1176 .cs-title,
-  body.dark-mode #services-1176 .cs-text,
-  body.dark-mode #services-1176 .cs-h3,
-  body.dark-mode #services-1176 .cs-item-text,
-  body.dark-mode #services-1176 .cs-link {
-    color: var(--bodyTextColorWhite);
-  }
-  body.dark-mode #services-1176 .cs-text {
-    opacity: 0.8;
-  }
-  body.dark-mode #services-1176 .cs-arrow {
-    filter: grayscale(1) brightness(1000%);
-  }
-}
 /*-- -------------------------- -->
 <---   Side By Side Reverse     -->
 <--- -------------------------- -*/
@@ -276,32 +250,16 @@
   }
   #sbsr-1444 .cs-content {
     width: 50%;
+    order: 2;
   }
   #sbsr-1444 .cs-picture {
-    height: 43rem;
-    width: 43rem;
+    height: 39rem;
+    width: 39rem;
     /* sends it to the right in the 2nd position */
-    order: 2;
+    order: 1;
   }
   #sbsr-1444 .cs-bottom-content {
     height: 9.375rem;
-  }
-}
-/* Dark Mode */
-@media only screen and (min-width: 0rem) {
-  body.dark-mode #sbsr-1444 .cs-title,
-  body.dark-mode #sbsr-1444 .cs-text,
-  body.dark-mode #sbsr-1444 .cs-li,
-  body.dark-mode #sbsr-1444 .cs-h3,
-  body.dark-mode #sbsr-1444 .cs-li-text {
-    color: var(--bodyTextColorWhite);
-  }
-  body.dark-mode #sbsr-1444 .cs-li-text,
-  body.dark-mode #sbsr-1444 .cs-text {
-    opacity: 0.8;
-  }
-  body.dark-mode #sbsr-1444 .cs-li-picture {
-    background-color: var(--dark);
   }
 }
 /*-- -------------------------- -->
@@ -424,29 +382,6 @@
     margin-right: 1.25rem;
   }
 }
-/* Dark Mode */
-@media only screen and (min-width: 0rem) {
-  body.dark-mode #services-1187 .cs-topper {
-    color: var(--primaryLight);
-  }
-  body.dark-mode #services-1187 .cs-text,
-  body.dark-mode #services-1187 .cs-item-text {
-    opacity: 0.8;
-  }
-  body.dark-mode #services-1187 .cs-picture {
-    background-color: var(--medium);
-  }
-  body.dark-mode #services-1187 .cs-icon {
-    /* turns it white */
-    filter: grayscale(1) brightness(1000%);
-  }
-  body.dark-mode #services-1187 .cs-title,
-  body.dark-mode #services-1187 .cs-text,
-  body.dark-mode #services-1187 .cs-h3,
-  body.dark-mode #services-1187 .cs-item-text {
-    color: var(--bodyTextColorWhite);
-  }
-}
 /*-- -------------------------- -->
 <---            CTA             -->
 <--- -------------------------- -*/
@@ -491,15 +426,6 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 1rem;
-  }
-  #cta-1071 .cs-button-solid {
-    background: transparent;
-    color: var(--bodyTextColorWhite);
-    border: 2px solid var(--bodyTextColorWhite);
-  }
-  #cta-1071 .cs-button-solid:hover {
-    color: #dcd9d9;
-    border: 2px solid #dcd9d9;
   }
   #cta-1071 .cs-background {
     width: 100%;
@@ -710,12 +636,12 @@
     width: 55%;
     flex-direction: column;
     align-items: flex-start;
-    order: 2;
+    order: 1;
   }
   #meet-team-1141 .cs-card-group {
     justify-content: center;
     flex-wrap: nowrap;
-    order: 1;
+    order: 2;
   }
   #meet-team-1141 .cs-item {
     width: 100%;
@@ -728,23 +654,6 @@
     /* prevents flexbox from squishing it */
     display: block;
     flex: none;
-  }
-}
-/* Dark Mode */
-@media only screen and (min-width: 0rem) {
-  body.dark-mode #meet-team-1141 .cs-topper {
-    color: var(--secondary);
-  }
-  body.dark-mode #meet-team-1141 .cs-title,
-  body.dark-mode #meet-team-1141 .cs-name,
-  body.dark-mode #meet-team-1141 .cs-job {
-    color: var(--bodyTextColorWhite);
-  }
-  body.dark-mode #meet-team-1141 .cs-job {
-    opacity: 0.8;
-  }
-  body.dark-mode #meet-team-1141 .cs-info {
-    background-color: var(--medium);
   }
 }
 /*-- -------------------------- -->
@@ -884,17 +793,6 @@
 @media only screen and (min-width: 37.5rem) {
   #gallery-1374 .cs-item {
     grid-column: span 6;
-  }
-}
-/* Dark Mode */
-@media only screen and (min-width: 0rem) {
-  body.dark-mode #gallery-1374 .cs-title,
-  body.dark-mode #gallery-1374 .cs-text,
-  body.dark-mode #gallery-1374 .cs-h3 {
-    color: var(--bodyTextColorWhite);
-  }
-  body.dark-mode #gallery-1374 .cs-text {
-    opacity: 0.8;
   }
 }
 /*-- -------------------------- -->
@@ -1149,21 +1047,6 @@
   #reviews .cs-item {
     /* reset margin so it won't interfere with flexbox */
     margin: 0;
-  }
-}
-/* Dark Mode */
-@media only screen and (min-width: 0rem) {
-  body.dark-mode #reviews .cs-title,
-  body.dark-mode #reviews .cs-text,
-  body.dark-mode #reviews .cs-item-p,
-  body.dark-mode #reviews .cs-reviewer {
-    color: var(--bodyTextColorWhite);
-  }
-  body.dark-mode #reviews .cs-item {
-    background: var(--medium);
-  }
-  body.dark-mode #reviews .cs-desc {
-    color: var(--primaryLight);
   }
 }
 /*-- -------------------------- -->

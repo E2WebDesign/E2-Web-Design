@@ -299,42 +299,4 @@
         }
     }
 }
-
-/* Dark Mode */
-@media only screen and (min-width: 0rem) {
-    body.dark-mode {
-        #cs-contact-242 {
-            .cs-text,
-            .cs-title {
-                color: var(--bodyTextColorWhite);
-            }
-
-            #cs-form-242 {
-                label,
-                input,
-                textarea {
-                    background-color: transparent;
-                    color: var(--bodyTextColorWhite);
-
-                    &::placeholder {
-                        /* lighten up the color of the text by 90%*/
-                        filter: brightness(1.9);
-                        color: var(--bodyTextColorWhite);
-                    }
-                }
-            }
-
-            .cs-icon {
-                /* makes it so bright it turns white */
-                filter: brightness(900%);
-            }
-
-            .cs-header,
-            .cs-link {
-                color: var(--bodyTextColorWhite);
-            }
-        }
-    }
-}
-
                                 
