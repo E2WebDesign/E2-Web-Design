@@ -66,7 +66,11 @@
             width: (56/16rem);
             height: (28/16rem);
             border-radius: (40/16rem);
-            background-color: var(--primary);
+            background: linear-gradient(
+                90deg,
+                var(--primaryLight) ,
+                var(--primary)
+            );
             margin: 0 (12/16rem);
             position: relative;
             /* prevent flexbox from squishing it */
@@ -92,8 +96,8 @@
                 height: 100%;
                 background: linear-gradient(
                     90deg,
-                    #ffba43 -24.69%,
-                    #e12213 126.23%
+                    var(--primary) ,
+                    var(--primaryLight)
                 );
                 opacity: 0;
                 position: absolute;
@@ -163,18 +167,18 @@
 
             &:after {
                 /* percentage off */
-                content: "30% off";
+                content: "Discount";
                 font-size: (12/16rem);
                 line-height: (26/16rem);
                 text-transform: uppercase;
-                font-weight: 500;
+                font-weight: 900;
                 width: auto;
                 height: (26/16rem);
                 padding: 0 (12/16rem);
                 border-radius: (8/16rem);
                 background: #e5f2ff;
                 box-sizing: border-box;
-                color: var(--primary);
+                color: var(--primaryLight);
                 opacity: 1;
                 position: absolute;
                 display: flex;
@@ -216,13 +220,14 @@
             width: 100%;
             max-width: (630/16rem);
             border-radius: (16/16rem);
-            background: #fff;
-            border: 1px solid #e8e8e8;
+            background: #f7f7f7;
+            color: var(--bodyTextColor);
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.188);
             /* prevents padding from adding to height and width */
             box-sizing: border-box;
 
             &:nth-of-type(2) {
-                background-color: #f7f7f7;
+                // background-color: #f7f7f7;
                 .cs-option2-text,
                 .cs-option1-text {
                     transition-delay: 0.1s;
@@ -231,7 +236,6 @@
         }
 
         .cs-popular {
-            background: var(--primary);
             position: relative;
             /* clips the popular tag */
             overflow: hidden;
@@ -248,40 +252,12 @@
                 width: (170/16rem);
                 padding: 0 (12/16rem);
                 color: var(--bodyTextColorWhite);
-                background-color: var(--secondary);
+                background-color: var(--primaryLight);
                 position: absolute;
                 display: block;
                 top: (20/16rem);
                 right: (-60/16rem);
                 transform: rotate(42deg);
-            }
-
-            .cs-h3,
-            .cs-item-text,
-            .cs-price,
-            .cs-included,
-            .cs-li,
-            .cs-small {
-                color: var(--bodyTextColorWhite);
-            }
-
-            .cs-button-solid {
-                background-color: #fff;
-                color: var(--primary);
-                transition: color 0.3s;
-
-                &:before {
-                    background-color: var(--secondary);
-                }
-
-                &:hover {
-                    color: #fff;
-                }
-            }
-
-            .cs-li-img {
-                /* turns the check mark white */
-                filter: brightness(900%);
             }
         }
 

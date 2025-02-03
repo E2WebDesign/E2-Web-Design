@@ -210,7 +210,7 @@
   #steps-284 .cs-item:nth-of-type(4) .cs-item-text:after {
     /* move dot to the right now */
     left: auto;
-    right: -0.9375rem;
+    right: -0.75rem;
   }
   #steps-284 .cs-item:nth-of-type(3) .cs-item-text:before {
     height: auto;
@@ -263,7 +263,7 @@
     position: relative;
   }
   #steps-284 .cs-item-text:before {
-    /* Green line */
+    /* Blue line */
     content: "";
     width: 70%;
     height: 100%;

@@ -59,7 +59,7 @@
     width: 3.5rem;
     height: 1.75rem;
     border-radius: 2.5rem;
-    background-color: var(--primary);
+    background: linear-gradient(90deg, var(--primaryLight), var(--primary));
     margin: 0 0.75rem;
     position: relative;
     /* prevent flexbox from squishing it */
@@ -79,7 +79,7 @@
     content: "";
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, #ffba43 -24.69%, #e12213 126.23%);
+    background: linear-gradient(90deg, var(--primary), var(--primaryLight));
     opacity: 0;
     position: absolute;
     display: block;
@@ -138,18 +138,18 @@
   }
   #pricing-387 #cs-option2-387:after {
     /* percentage off */
-    content: "30% off";
+    content: "Discount";
     font-size: 0.75rem;
     line-height: 1.625rem;
     text-transform: uppercase;
-    font-weight: 500;
+    font-weight: 900;
     width: auto;
     height: 1.625rem;
     padding: 0 0.75rem;
     border-radius: 0.5rem;
     background: #e5f2ff;
     box-sizing: border-box;
-    color: var(--primary);
+    color: var(--primaryLight);
     opacity: 1;
     position: absolute;
     display: flex;
@@ -185,20 +185,17 @@
     width: 100%;
     max-width: 39.375rem;
     border-radius: 1rem;
-    background: #fff;
-    border: 1px solid #e8e8e8;
+    background: #f7f7f7;
+    color: var(--bodyTextColor);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.188);
     /* prevents padding from adding to height and width */
     box-sizing: border-box;
-  }
-  #pricing-387 .cs-item:nth-of-type(2) {
-    background-color: #f7f7f7;
   }
   #pricing-387 .cs-item:nth-of-type(2) .cs-option2-text,
   #pricing-387 .cs-item:nth-of-type(2) .cs-option1-text {
     transition-delay: 0.1s;
   }
   #pricing-387 .cs-popular {
-    background: var(--primary);
     position: relative;
     /* clips the popular tag */
     overflow: hidden;
@@ -215,35 +212,12 @@
     width: 10.625rem;
     padding: 0 0.75rem;
     color: var(--bodyTextColorWhite);
-    background-color: var(--secondary);
+    background-color: var(--primaryLight);
     position: absolute;
     display: block;
     top: 1.25rem;
     right: -3.75rem;
     transform: rotate(42deg);
-  }
-  #pricing-387 .cs-popular .cs-h3,
-  #pricing-387 .cs-popular .cs-item-text,
-  #pricing-387 .cs-popular .cs-price,
-  #pricing-387 .cs-popular .cs-included,
-  #pricing-387 .cs-popular .cs-li,
-  #pricing-387 .cs-popular .cs-small {
-    color: var(--bodyTextColorWhite);
-  }
-  #pricing-387 .cs-popular .cs-button-solid {
-    background-color: #fff;
-    color: var(--primary);
-    transition: color 0.3s;
-  }
-  #pricing-387 .cs-popular .cs-button-solid:before {
-    background-color: var(--secondary);
-  }
-  #pricing-387 .cs-popular .cs-button-solid:hover {
-    color: #fff;
-  }
-  #pricing-387 .cs-popular .cs-li-img {
-    /* turns the check mark white */
-    filter: brightness(900%);
   }
   #pricing-387 .cs-h3 {
     font-size: 1.25rem;
