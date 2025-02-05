@@ -1,256 +1,79 @@
 /*-- -------------------------- -->
-<---   Side By Side Reverse     -->
-<--- -------------------------- -*/
-/* Mobile - 360px */
-@media only screen and (min-width: 0rem) {
-  #sbsr-2273 {
-    padding: var(--sectionPadding);
-    background-color: #f7f7f7;
-    overflow: hidden;
-    position: relative;
-    z-index: 1;
-  }
-  #sbsr-2273 .cs-container {
-    width: 100%;
-    /* changes to 1280px on desktop */
-    max-width: 36.5rem;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* 48px - 64px */
-    gap: clamp(3rem, 6vw, 4rem);
-  }
-  #sbsr-2273 .cs-content {
-    /* set text align to left if content needs to be left aligned */
-    text-align: center;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    /* centers content horizontally, set to flex-start to left align */
-    align-items: center;
-  }
-  #sbsr-2273 .cs-topper {
-    color: var(--secondary);
-  }
-  #sbsr-2273 .cs-title {
-    max-width: 30ch;
-  }
-  #sbsr-2273 .cs-text {
-    margin-bottom: 2rem;
-  }
-  #sbsr-2273 .cs-card-group {
-    width: 100%;
-    margin: 0 0 2rem;
-    padding: 0;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    /* 20px - 24px */
-    gap: clamp(1.25rem, 1.7vw, 1.5rem);
-  }
-  #sbsr-2273 .cs-item {
-    text-align: center;
-    list-style: none;
-    width: 100%;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    grid-column: span 12;
-    gap: 1.5rem;
-    transition: background-color 0.3s;
-  }
-  #sbsr-2273 .cs-li-picture {
-    width: 4.375rem;
-    height: 4.375rem;
-    margin: 0;
-    border-radius: 1.2rem;
-    background-color: var(--svgBackground);
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* prevents flexbox from squishing it */
-    flex: none;
-    position: relative;
-    z-index: 1;
-  }
-  #sbsr-2273 .cs-li-icon {
-    width: 2.5rem;
-    height: auto;
-    display: block;
-  }
-  #sbsr-2273 .cs-flex {
-    flex: 1 1 0;
-  }
-  #sbsr-2273 .cs-h3 {
-    font-size: 1.25rem;
-    font-weight: 700;
-    line-height: 1.2em;
-    text-align: inherit;
-    margin: 0 0 0.75rem;
-    color: var(--headerColor);
-    transition: color 0.3s;
-  }
-  #sbsr-2273 .cs-li-text {
-    font-size: 1rem;
-    line-height: 1.5em;
-    text-align: inherit;
-    width: 100%;
-    margin: auto 0 0 0;
-    color: var(--bodyTextColor);
-    transition: color 0.3s;
-  }
-  #sbsr-2273 .cs-image-group {
-    /* scales the whole section down and ties the font size to the vw and stops at 75% of the vale of 1em, changes at desktop */
-    font-size: min(2.8vw, .89rem);
-    /* everything inside this box is in ems so we can scale it all down proportionally with a font size */
-    width: 32.625em;
-    height: 38.1875em;
-    order: -1;
-    position: relative;
-    /* prevents flexbox from squishing it */
-    flex: none;
-  }
-  #sbsr-2273 .cs-picture {
-    width: 30.8125em;
-    height: 36.4375em;
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-  #sbsr-2273 .cs-picture img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-    border-radius: 1rem;
-    border: clamp(0.375em, 1.5vw, 0.75em) solid #fff;
-    top: 0;
-    left: 0;
-  }
-  #sbsr-2273 .cs-flower {
-    /* 125px - 309px */
-    width: clamp(7.8125rem, 31vw, 19.3125rem);
-    height: auto;
-    display: block;
-    position: absolute;
-    /* 0px - 34px */
-    top: calc(clamp(0rem, 4vw, 2.125rem) * -1);
-    /* 33px - 116px */
-    left: calc(clamp(2.0625rem, 12vw, 7.25rem) * -1);
-    z-index: 1;
-    transform: rotate(18deg);
-  }
-}
-/* Tablet - 768px */
-@media only screen and (min-width: 600px) {
-  #sbsr-2273 .cs-content {
-    text-align: left;
-    align-items: flex-start;
-  }
-  #sbsr-2273 .cs-item {
-    text-align: left;
-    align-items: flex-start;
-    grid-column: span 6;
-  }
-}
-/* Desktop - 1024px */
-@media only screen and (min-width: 64rem) {
-  #sbsr-2273 .cs-container {
-    max-width: 80rem;
-    flex-direction: row;
-    align-items: stretch;
-  }
-  #sbsr-2273 .cs-content {
-    text-align: left;
-    align-items: flex-start;
-    align-self: center;
-  }
-  #sbsr-2273 .cs-image-group {
-    font-size: min(1.3vw, 1rem);
-    height: auto;
-    min-height: 38.25em;
-    order: initial;
-  }
-  #sbsr-2273 .cs-picture {
-    height: auto;
-    top: 0;
-    bottom: 1.75em;
-  }
-}
-/* Large Desktop - 1400px */
-@media only screen and (min-width: 87.5rem) {
-  #sbsr-2273 .cs-item {
-    flex-direction: row;
-  }
-  #sbsr-2273 .cs-flower {
-    margin-right: -51.5rem;
-    top: initial;
-    right: 50%;
-    bottom: -6.875rem;
-    left: initial;
-    transform: rotate(246deg);
-  }
-}
-/*-- -------------------------- -->
 <---          Services          -->
 <--- -------------------------- -*/
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-  #services-1187 {
+  #services-1629 {
     padding: var(--sectionPadding);
-    background-color: var(--offSet);
   }
-  #services-1187 .cs-container {
-    max-width: 80rem;
+  #services-1629 .cs-container {
+    /* changes to 1280px at desktop */
+    max-width: 50rem;
     width: 100%;
     margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     /* 48px - 64px */
     gap: clamp(3rem, 6vw, 4rem);
   }
-  #services-1187 .cs-content {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    /* centers content horizontally, set to flex-start to left align */
-    align-items: center;
+  #services-1629 .cs-content {
     /* set text align to left if content needs to be left aligned */
     text-align: center;
-  }
-  #services-1187 .cs-card-group {
-    /* changes to 1280px at desktop */
-    max-width: 50rem;
     width: 100%;
+    display: flex;
+    /* centers content horizontally, set to flex-start to left align */
+    justify-content: center;
+  }
+  #services-1629 .cs-title {
+    max-width: 20ch;
+  }
+  #services-1629 .cs-text {
+    max-width: 40rem;
+    position: relative;
+    z-index: 1;
+  }
+  #services-1629 .cs-text:after {
+    /* divider line */
+    content: "";
+    width: 100%;
+    height: 1px;
+    margin-top: 1.5rem;
+    background: var(--primary);
+    opacity: 1;
+    display: block;
+    position: relative;
+  }
+  #services-1629 .cs-card-group {
     margin: 0;
     padding: 0;
     display: grid;
-    justify-content: center;
-    row-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    row-gap: 2.5rem;
+    /* 16px - 40px */
+    column-gap: clamp(1rem, 5vw, 2.5rem);
   }
-  #services-1187 .cs-item {
+  #services-1629 .cs-item {
     list-style: none;
-    max-width: 23rem;
+    max-width: 25rem;
     width: 100%;
     margin: 0;
     box-sizing: border-box;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+    /* 16px - 24px */
+    gap: clamp(1rem, 3vw, 1.5rem);
     text-align: left;
   }
-  #services-1187 .cs-picture {
-    width: 4.375rem;
-    height: 4.375rem;
-    margin-bottom: 1.25rem;
+  #services-1629 .cs-picture {
+    /* 60px - 80px */
+    width: clamp(3.75rem, 6vw, 5rem);
+    height: clamp(3.75rem, 6vw, 5rem);
+    margin: 0;
     box-sizing: border-box;
-    /* prevents border from affecting height and width */
     background-color: var(--svgBackground);
-    border-radius: 1.2rem;
+    border-radius: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -258,60 +81,197 @@
     /* prevents flexbox from squishing it */
     flex: none;
   }
-  #services-1187 .cs-icon {
-    width: 2.1875rem;
+  #services-1629 .cs-icon {
+    width: 2rem;
     height: auto;
     display: block;
   }
-  #services-1187 .cs-h3 {
+  #services-1629 .cs-h3 {
     font-size: 1.25rem;
+    text-align: inherit;
     line-height: 1.5em;
     margin: 0;
     margin-bottom: 0.5rem;
     color: var(--headerColor);
-    text-align: center;
   }
-  #services-1187 .cs-item-text {
+  #services-1629 .cs-item-text {
     /* 14px - 16px */
     font-size: clamp(0.875rem, 1.5vw, 1rem);
+    text-align: inherit;
     line-height: 1.5em;
     margin: 0;
     color: var(--bodyTextColor);
-    text-align: center;
   }
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-  #services-1187 .cs-card-group {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    column-gap: 2.5rem;
-    row-gap: 2.5rem;
+  #services-1629 .cs-container {
+    max-width: 80rem;
   }
-  #services-1187 .cs-item {
+  #services-1629 .cs-card-group {
+    width: 100%;
+  }
+  #services-1629 .cs-item {
     margin: 0;
-    width: 46%;
+    width: 100%;
     align-items: flex-start;
   }
-  #services-1187 .cs-h3,
-  #services-1187 .cs-item-text {
+  #services-1629 .cs-h3,
+  #services-1629 .cs-item-text {
     text-align: left;
+  }
+  #services-1629 .cs-flex {
+    text-align: left;
+    width: 40vw;
+    max-width: 40rem;
+    flex: none;
+  }
+  #services-1629 .cs-title {
+    margin: 0;
+    text-align: center;
+  }
+  #services-1629 .cs-text {
+    padding: 0.75rem 0 0.75rem 1.5rem;
+  }
+  #services-1629 .cs-text:after {
+    width: 1px;
+    height: 100%;
+    margin: 0 1.5rem 0 0;
+    order: -1;
+    position: absolute;
+    left: 0;
+    top: 0;
   }
 }
 /* Large Desktop - 1300px */
 @media only screen and (min-width: 81.25rem) {
-  #services-1187 .cs-card-group {
+  #services-1629 .cs-card-group {
     max-width: 80rem;
   }
-  #services-1187 .cs-item {
+  #services-1629 .cs-item {
     flex-direction: row;
   }
-  #services-1187 .cs-picture {
+}
+/*-- -------------------------- -->
+<---       Side By Side         -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #RPsbs-4581 {
+    background-color: #f7f7f7;
+  }
+  #RPsbs-4581,
+  #RPsbsr-4581 {
+    padding: var(--sectionPadding);
+  }
+  #RPsbs-4581 .cs-container,
+  #RPsbsr-4581 .cs-container {
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: center;
+  }
+  #RPsbs-4581 .cs-content,
+  #RPsbsr-4581 .cs-content {
+    text-align: left;
+    width: auto;
+    max-width: 40.625rem;
+    margin: 0 1rem;
+    margin-top: -18.75rem;
+    /* 40px - 60px top and bottom */
+    /* 20px - 60px left and right */
+    padding: clamp(2.5rem, 7vw, 3.75rem) clamp(1.25rem, 5.5vw, 3.75rem);
+    background-color: #fafbfc;
+    /* prevents padding from affecting width and height */
+    box-sizing: border-box;
+    border-radius: 0.75rem;
+    /* clips the pseudo element */
+    overflow: hidden;
+    box-shadow: 0px 24px 54px #576b934f;
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: flex-start;
+    position: relative;
+    z-index: 10;
+  }
+  #RPsbs-4581 .cs-content:before,
+  #RPsbsr-4581 .cs-content:before {
+    /* green border top */
+    content: "";
+    width: 100%;
+    height: 0.5rem;
+    background: var(--primary);
+    opacity: 1;
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+  }
+  #RPsbs-4581 .cs-text,
+  #RPsbsr-4581 .cs-text {
+    margin-bottom: 1rem;
+  }
+  #RPsbs-4581 .cs-text:last-of-type,
+  #RPsbsr-4581 .cs-text:last-of-type {
+    margin-bottom: 2rem;
+  }
+  #RPsbs-4581 .cs-picture,
+  #RPsbsr-4581 .cs-picture {
+    width: 100%;
+    height: auto;
+    height: 27.6875rem;
+    /* clips the img corners */
+    overflow: hidden;
+    border-radius: 1.5rem;
+    display: block;
+    /* sends it to the top */
+    order: -1;
+    position: relative;
+    border: clamp(0.375em, 1.5vw, 0.75em) solid #fff;
+  }
+  #RPsbs-4581 .cs-picture img,
+  #RPsbsr-4581 .cs-picture img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #RPsbs-4581 .cs-container,
+  #RPsbsr-4581 .cs-container {
+    padding: 3.75rem 0;
+    position: relative;
+    align-items: flex-end;
+    justify-content: center;
+  }
+  #RPsbs-4581 .cs-content,
+  #RPsbsr-4581 .cs-content {
+    width: 65%;
     margin: 0;
-    margin-right: 1.25rem;
+  }
+  #RPsbs-4581 .cs-picture,
+  #RPsbsr-4581 .cs-picture {
+    /* 465px - 617px */
+    width: clamp(29.0625rem, 53vw, 38.5625rem);
+    position: absolute;
+    left: 0;
+    height: 100%;
+  }
+}
+/* Small Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+  #RPsbs-4581 .cs-content,
+  #RPsbsr-4581 .cs-content {
+    /* 90px - 108px */
+    margin-right: clamp(5rem, 8.5vw, 6.75rem);
   }
 }
 /*-- -------------------------- -->
@@ -319,16 +279,45 @@
 <--- -------------------------- -*/
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-  #sbsr-2232 {
+  #RPsbsr-4581 {
+    background-color: #fff;
+  }
+  #RPsbsr-4581 .cs-picture {
+    border: clamp(0.375em, 1.5vw, 0.75em) solid #f7f7f7;
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #RPsbsr-4581 .cs-container {
+    align-items: flex-start;
+  }
+  #RPsbsr-4581 .cs-picture {
+    left: auto;
+    right: 0;
+  }
+}
+/* Small Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+  #RPsbsr-4581 .cs-content {
+    margin-right: 0;
+    /* 90px - 108px */
+    margin-left: clamp(5rem, 8.5vw, 6.75rem);
+  }
+}
+/*-- -------------------------- -->
+<---            CTA             -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #cta-1071 {
     padding: var(--sectionPadding);
-    overflow: hidden;
+    background-color: var(--primary);
     position: relative;
     z-index: 1;
   }
-  #sbsr-2232 .cs-container {
+  #cta-1071 .cs-container {
     width: 100%;
-    /* changes to 1280px on desktop */
-    max-width: 36.5rem;
+    max-width: 80rem;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -336,7 +325,7 @@
     /* 48px - 64px */
     gap: clamp(3rem, 6vw, 4rem);
   }
-  #sbsr-2232 .cs-content {
+  #cta-1071 .cs-content {
     /* set text align to left if content needs to be left aligned */
     text-align: center;
     width: 100%;
@@ -344,160 +333,227 @@
     flex-direction: column;
     /* centers content horizontally, set to flex-start to left align */
     align-items: center;
+    /* 48px - 64px */
+    gap: clamp(3rem, 6vw, 4rem);
   }
-  #sbsr-2232 .cs-topper {
-    color: var(--secondary);
+  #cta-1071 .cs-flex {
+    max-width: 39.375rem;
   }
-  #sbsr-2232 .cs-title {
-    max-width: 30ch;
-  }
-  #sbsr-2232 .cs-text {
-    margin-bottom: 2rem;
-  }
-  #sbsr-2232 .cs-card-group {
-    width: 100%;
-    margin: 0 0 2rem;
-    padding: 0;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    /* 20px - 24px */
-    gap: clamp(1.25rem, 1.7vw, 1.5rem);
-  }
-  #sbsr-2232 .cs-item {
-    text-align: center;
-    list-style: none;
-    width: 100%;
+  #cta-1071 .cs-title {
     margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    grid-column: span 12;
-    gap: 1.5rem;
-    transition: background-color 0.3s;
+    color: white;
   }
-  #sbsr-2232 .cs-li-picture {
-    width: 4.375rem;
-    height: 4.375rem;
-    margin: 0;
-    border-radius: 1.2rem;
-    background-color: var(--svgBackground);
-    overflow: hidden;
+  #cta-1071 .cs-button-box {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    /* prevents flexbox from squishing it */
-    flex: none;
-    position: relative;
-    z-index: 1;
+    gap: 1rem;
   }
-  #sbsr-2232 .cs-li-icon {
-    width: 2.5rem;
-    height: auto;
-    display: block;
-  }
-  #sbsr-2232 .cs-flex {
-    flex: 1 1 0;
-  }
-  #sbsr-2232 .cs-h3 {
-    font-size: 1.25rem;
-    font-weight: 700;
-    line-height: 1.2em;
-    text-align: inherit;
-    margin: 0 0 0.75rem;
-    color: var(--headerColor);
-    transition: color 0.3s;
-  }
-  #sbsr-2232 .cs-li-text {
-    font-size: 1rem;
-    line-height: 1.5em;
-    text-align: inherit;
-    width: 100%;
-    margin: auto 0 0 0;
-    color: var(--bodyTextColor);
-    transition: color 0.3s;
-  }
-  #sbsr-2232 .cs-image-group {
-    /* scales the whole section down and ties the font size to the vw and stops at 75% of the vale of 1em, changes at desktop */
-    font-size: min(2.8vw, .89rem);
-    /* everything inside this box is in ems so we can scale it all down proportionally with a font size */
-    width: 32.625em;
-    height: 38.1875em;
-    position: relative;
-    /* prevents flexbox from squishing it */
-    flex: none;
-    order: -1;
-  }
-  #sbsr-2232 .cs-picture {
-    width: 30.8125em;
-    height: 36.4375em;
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-  #sbsr-2232 .cs-picture img {
+  #cta-1071 .cs-background {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    display: block;
     position: absolute;
-    border-radius: 1rem;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  #cta-1071 .cs-background:before {
+    /* background color overlay */
+    content: "";
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 100%;
+    background: #043f7a;
+    opacity: 0.7;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  #cta-1071 .cs-background img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    /* Makes img tag act as a background image */
+    object-fit: cover;
+  }
+}
+/* Small Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+  #cta-1071 .cs-content {
+    text-align: left;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  #cta-1071 .cs-button-box {
+    flex-wrap: nowrap;
+    align-items: center;
+    flex: none;
+  }
+}
+/*-- -------------------------- -->
+<---       Side By Side         -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #RPsbs-458 {
+    background-color: #fff;
+  }
+  #RPsbs-458 .cs-picture {
     border: clamp(0.375em, 1.5vw, 0.75em) solid #f7f7f7;
+  }
+  #RPsbs-458,
+  #RPsbsr-458 {
+    padding: var(--sectionPadding);
+  }
+  #RPsbs-458 .cs-container,
+  #RPsbsr-458 .cs-container {
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: center;
+  }
+  #RPsbs-458 .cs-content,
+  #RPsbsr-458 .cs-content {
+    text-align: left;
+    width: auto;
+    max-width: 40.625rem;
+    margin: 0 1rem;
+    margin-top: -18.75rem;
+    /* 40px - 60px top and bottom */
+    /* 20px - 60px left and right */
+    padding: clamp(2.5rem, 7vw, 3.75rem) clamp(1.25rem, 5.5vw, 3.75rem);
+    background-color: #fafbfc;
+    /* prevents padding from affecting width and height */
+    box-sizing: border-box;
+    border-radius: 0.75rem;
+    /* clips the pseudo element */
+    overflow: hidden;
+    box-shadow: 0px 24px 54px #576b934f;
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: flex-start;
+    position: relative;
+    z-index: 10;
+  }
+  #RPsbs-458 .cs-content:before,
+  #RPsbsr-458 .cs-content:before {
+    /* green border top */
+    content: "";
+    width: 100%;
+    height: 0.5rem;
+    background: var(--primary);
+    opacity: 1;
+    position: absolute;
+    display: block;
     top: 0;
     left: 0;
   }
-  #sbsr-2232 .cs-flower {
-    /* 183px - 309px */
-    width: clamp(11.4375rem, 28vw, 19.3125rem);
-    height: auto;
-    display: block;
-    position: absolute;
-    right: -3.75rem;
-    /* 55px - 109px */
-    bottom: calc(clamp(3.4375rem, 6vw, 4.8125rem) * -1);
+  #RPsbs-458 .cs-text,
+  #RPsbsr-458 .cs-text {
+    margin-bottom: 1rem;
+  }
+  #RPsbs-458 .cs-text:last-of-type,
+  #RPsbsr-458 .cs-text:last-of-type {
+    margin-bottom: 2rem;
+  }
+  #RPsbs-458 .cs-button-solid,
+  #RPsbsr-458 .cs-button-solid {
+    font-size: 1rem;
+    /* 46px - 56px */
+    line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+    text-decoration: none;
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+    color: #fff;
+    min-width: 9.375rem;
+    padding: 0 1.5rem;
+    background-color: var(--primary);
+    border-radius: 0.25rem;
+    display: inline-block;
+    position: relative;
     z-index: 1;
-    transform: rotate(95deg);
+    /* prevents padding from adding to the width */
+    box-sizing: border-box;
+  }
+  #RPsbs-458 .cs-button-solid:before,
+  #RPsbsr-458 .cs-button-solid:before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    background: #000;
+    opacity: 1;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 0.25rem;
+    transition: width 0.3s;
+  }
+  #RPsbs-458 .cs-button-solid:hover:before,
+  #RPsbsr-458 .cs-button-solid:hover:before {
+    width: 100%;
+  }
+  #RPsbs-458 .cs-picture,
+  #RPsbsr-458 .cs-picture {
+    width: 100%;
+    height: auto;
+    height: 27.6875rem;
+    /* clips the img corners */
+    overflow: hidden;
+    border-radius: 1.5rem;
+    display: block;
+    /* sends it to the top */
+    order: -1;
+    position: relative;
+  }
+  #RPsbs-458 .cs-picture img,
+  #RPsbsr-458 .cs-picture img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
   }
 }
 /* Tablet - 768px */
-@media only screen and (min-width: 600px) {
-  #sbsr-2232 .cs-content {
-    text-align: left;
-    align-items: flex-start;
+@media only screen and (min-width: 48rem) {
+  #RPsbs-458 .cs-container,
+  #RPsbsr-458 .cs-container {
+    padding: 3.75rem 0;
+    position: relative;
+    align-items: flex-end;
+    justify-content: center;
   }
-  #sbsr-2232 .cs-item {
-    text-align: left;
-    align-items: flex-start;
-    grid-column: span 6;
+  #RPsbs-458 .cs-content,
+  #RPsbsr-458 .cs-content {
+    width: 65%;
+    margin: 0;
+  }
+  #RPsbs-458 .cs-picture,
+  #RPsbsr-458 .cs-picture {
+    /* 465px - 617px */
+    width: clamp(29.0625rem, 53vw, 38.5625rem);
+    position: absolute;
+    left: 0;
+    height: 100%;
   }
 }
-/* Desktop - 1024px */
+/* Small Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
-  #sbsr-2232 .cs-container {
-    max-width: 80rem;
-    flex-direction: row;
-    align-items: stretch;
-  }
-  #sbsr-2232 .cs-content {
-    text-align: left;
-    align-items: flex-start;
-    align-self: center;
-  }
-  #sbsr-2232 .cs-image-group {
-    font-size: min(1.3vw, 1rem);
-    height: auto;
-    min-height: 38.25em;
-    order: initial;
-  }
-  #sbsr-2232 .cs-picture {
-    height: auto;
-    top: 0;
-    bottom: 1.75em;
-  }
-}
-/* Large Desktop - 1400px */
-@media only screen and (min-width: 87.5rem) {
-  #sbsr-2232 .cs-item {
-    flex-direction: row;
+  #RPsbs-458 .cs-content,
+  #RPsbsr-458 .cs-content {
+    /* 90px - 108px */
+    margin-right: clamp(5rem, 8.5vw, 6.75rem);
   }
 }
 /*-- -------------------------- -->
@@ -505,11 +561,41 @@
 <--- -------------------------- -*/
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-  #sbsr-1444 {
+  #RPsbsr-458 {
+    background-color: #f7f7f7;
+  }
+  #RPsbsr-458 .cs-picture {
+    border: clamp(0.375em, 1.5vw, 0.75em) solid #fff;
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #RPsbsr-458 .cs-container {
+    align-items: flex-start;
+  }
+  #RPsbsr-458 .cs-picture {
+    left: auto;
+    right: 0;
+  }
+}
+/* Small Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+  #RPsbsr-458 .cs-content {
+    margin-right: 0;
+    /* 90px - 108px */
+    margin-left: clamp(5rem, 8.5vw, 6.75rem);
+  }
+}
+/*-- -------------------------- -->
+<---       Meet The Team        -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #meet-team-1141 {
     padding: var(--sectionPadding);
     overflow: hidden;
   }
-  #sbsr-1444 .cs-container {
+  #meet-team-1141 .cs-container {
     width: 100%;
     /* changes to 1280px at desktop */
     max-width: 34.375rem;
@@ -519,137 +605,682 @@
     align-items: center;
     /* 48px - 64px */
     gap: clamp(3rem, 6vw, 4rem);
-    position: relative;
   }
-  #sbsr-1444 .cs-content {
+  #meet-team-1141 .cs-content {
     /* set text align to left if content needs to be left aligned */
-    text-align: left;
+    text-align: center;
     width: 100%;
-    max-width: 33.875rem;
+    max-width: 542/16rem;
     display: flex;
     flex-direction: column;
     /* centers content horizontally, set to flex-start to left align */
     align-items: center;
   }
-  #sbsr-1444 .cs-text {
-    margin-bottom: 1rem;
+  #meet-team-1141 .cs-title {
+    max-width: 20ch;
   }
-  #sbsr-1444 .cs-text:last-of-type {
-    margin-bottom: 2rem;
-  }
-  #sbsr-1444 .cs-card-group {
+  #meet-team-1141 .cs-card-group {
     width: 100%;
-    max-width: 39.375rem;
-    margin: 0 0 2rem 0;
+    max-width: 630/16rem;
+    margin: 0;
     padding: 0;
     display: flex;
-    align-items: flex-start;
     flex-direction: column;
-    gap: 1.5rem;
-  }
-  #sbsr-1444 .cs-li {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    /* 16px - 20px */
-    gap: clamp(1rem, 2.5vw, 1.25rem);
-  }
-  #sbsr-1444 .cs-li-picture {
-    width: 4.375rem;
-    height: 4.375rem;
-    margin: 0;
-    border-radius: 1.2rem;
-    background-color: var(--svgBackground);
-    overflow: hidden;
-    display: flex;
     justify-content: center;
-    align-items: center;
-    /* prevents flexbox from squishing it */
-    flex: none;
+    /* 16px - 20px */
+    gap: clamp(1rem, 2.3vw, 1.25rem);
     position: relative;
-    z-index: 1;
   }
-  #sbsr-1444 .cs-li-icon {
-    width: 2.5rem;
-    height: auto;
-    display: block;
-  }
-  #sbsr-1444 .cs-h3 {
-    font-size: 1.25rem;
-    line-height: 1.2em;
-    font-weight: 700;
-    text-align: left;
-    margin: 0 0 0.75rem 0;
-    color: var(--headerColor);
-  }
-  #sbsr-1444 .cs-text {
-    text-align: center;
-  }
-  #sbsr-1444 .cs-li-text {
-    font-size: 1rem;
-    line-height: 1.5em;
-    text-align: left;
-    margin: 0;
-    color: var(--bodyTextColor);
-  }
-  #sbsr-1444 .cs-picture {
+  #meet-team-1141 .cs-item {
+    list-style: none;
     width: 100%;
-    max-width: 40.625rem;
-    min-height: 22.625rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+  }
+  #meet-team-1141 .cs-item:hover .cs-picture:before,
+  #meet-team-1141 .cs-item:hover .cs-picture:after {
+    opacity: 1;
+  }
+  #meet-team-1141 .cs-item:hover .cs-picture img {
+    transform: scale(1.1);
+  }
+  #meet-team-1141 .cs-picture {
+    width: 100%;
+    height: auto;
+    margin: 0 0 0.5rem 0;
+    /* removed at tablet */
+    aspect-ratio: 0.80589681;
     border-radius: 1.5rem;
-    /* clips img tag corners */
+    /* clips the img corners */
+    /* clips img tag from overflowing it on hover */
     overflow: hidden;
     display: block;
     position: relative;
-    z-index: 1;
     border: clamp(0.375em, 1.5vw, 0.75em) solid #f7f7f7;
     background-color: #f7f7f7;
+    z-index: 1;
   }
-  #sbsr-1444 .cs-picture img {
+  #meet-team-1141 .cs-picture img {
     width: 100%;
     height: 100%;
-    display: block;
+    object-fit: cover;
+    /* makes sure the top of the image is at the top of the parent, heads won't get cut off this way */
+    object-position: top;
     position: absolute;
     top: 0;
     left: 0;
-    object-fit: cover;
+    z-index: -1;
+    transition: transform 0.7s;
   }
-  #sbsr-1444 .cs-top-content {
+  #meet-team-1141 .cs-info {
+    width: 90%;
+    margin: -2.625rem 0 0;
+    padding: 1rem;
+    /* prevents padding and border from affecting height and width */
+    box-sizing: border-box;
+    background-color: #eaeae7;
+    box-shadow: 2px 2px 10px #00000033;
+    border-radius: 0.75rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
+    position: relative;
+    z-index: 10;
+    transition: background-color 0.3s;
   }
-  #sbsr-1444 .cs-bottom-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 6.25rem;
+  #meet-team-1141 .cs-name {
+    font-size: 1.25rem;
+    line-height: 1.2em;
+    font-weight: 700;
+    margin: 0 0 0.25rem 0;
+    color: var(--headerColor);
+    display: block;
+    transition: color 0.3s;
+  }
+  #meet-team-1141 .cs-job {
+    /* 14px - 16px */
+    font-size: clamp(0.875rem, 1.5vw, 1rem);
+    line-height: 1.5em;
+    margin-right: 0;
+    color: var(--bodyTextColor);
+    display: block;
+    transition: color 0.3s;
+  }
+}
+/* Tablet - 600px */
+@media only screen and (min-width: 37.5rem) {
+  #meet-team-1141 .cs-card-group {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+  }
+  #meet-team-1141 .cs-item {
+    width: 100%;
+  }
+  #meet-team-1141 .cs-picture {
+    height: 25.4375rem;
+    /* remove the aspect ratio so the height can be squished */
+    aspect-ratio: initial;
+  }
+}
+/* Mobile Buttons */
+@media only screen and (max-width: 56.25rem) {
+  .cs-button-mobile {
+    /* prevents flexbox from squishing it */
+    flex: none;
+  }
+  .cs-button-desktop {
+    /* prevents flexbox from squishing it */
+    display: none;
   }
 }
 /* Small Desktop - 1024px */
-@media only screen and (min-width: 64rem) {
-  #sbsr-1444 .cs-container {
+@media only screen and (min-width: 56.25rem) {
+  #meet-team-1141 .cs-container {
     max-width: 80rem;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    position: relative;
   }
-  #sbsr-1444 .cs-content {
-    width: 50%;
+  #meet-team-1141 .cs-content {
+    text-align: left;
+    width: 55%;
+    flex-direction: column;
+    align-items: flex-start;
     order: 1;
   }
-  #sbsr-1444 .cs-picture {
-    height: 39rem;
-    width: 39rem;
-    /* sends it to the right in the 2nd position */
+  #meet-team-1141 .cs-card-group {
+    justify-content: center;
+    flex-wrap: nowrap;
     order: 2;
   }
-  #sbsr-1444 .cs-bottom-content {
-    height: 9.375rem;
+  #meet-team-1141 .cs-item {
+    width: 100%;
+  }
+  #meet-team-1141 .cs-button-mobile {
+    /* prevents flexbox from squishing it */
+    display: none;
+  }
+  #meet-team-1141 .cs-button-desktop {
+    /* prevents flexbox from squishing it */
+    display: block;
+    flex: none;
+  }
+}
+/*-- -------------------------- -->
+<---          Pricing           -->
+<--- -------------------------- -*/
+/* Mobile 360px */
+@media only screen and (min-width: 0rem) {
+  #pricing-387 {
+    padding: var(--sectionPadding);
+    background-color: var(--offSet);
+  }
+  #pricing-387 .cs-container {
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 48px - 64px */
+    gap: clamp(3rem, 6vw, 4rem);
+  }
+  #pricing-387 .cs-content {
+    /* set text align to left if content needs to be left aligned */
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: center;
+  }
+  #pricing-387 .cs-text {
+    font-size: var(--bodyFontSize);
+    line-height: 1.5em;
+    text-align: inherit;
+    width: 100%;
+    max-width: 40.625rem;
+    margin: 0;
+    color: var(--bodyTextColor);
+  }
+  #pricing-387 .cs-text {
+    /* 48px - 64px */
+    margin-bottom: clamp(3rem, 3vw, 4rem);
+  }
+  #pricing-387 .cs-toggle-group {
+    width: 12.5rem;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #pricing-387 .cs-plan {
+    font-size: 1rem;
+    line-height: 1.5em;
+    margin: 0;
+    padding: 0;
+    color: var(--headerColor);
+  }
+  #pricing-387 .cs-plan:hover {
+    cursor: pointer;
+  }
+  #pricing-387 .cs-toggle {
+    width: 3.5rem;
+    height: 1.75rem;
+    border-radius: 2.5rem;
+    background: linear-gradient(90deg, var(--primaryLight), var(--primary));
+    margin: 0 0.75rem;
+    position: relative;
+    /* prevent flexbox from squishing it */
+    flex: none;
+  }
+  #pricing-387 .cs-toggle:hover {
+    cursor: pointer;
+  }
+  #pricing-387 .cs-toggle.active:before {
+    opacity: 1;
+  }
+  #pricing-387 .cs-toggle.active .cs-toggle-switch {
+    left: 2rem;
+  }
+  #pricing-387 .cs-toggle:before {
+    /* top right box */
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, var(--primary), var(--primaryLight));
+    opacity: 0;
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    border-radius: 2.5rem;
+    transition: opacity 0.3s;
+  }
+  #pricing-387 .cs-toggle-switch {
+    width: 1.25rem;
+    height: 1.25rem;
+    display: block;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0.25rem;
+    transition: left 0.3s;
+    background: #fff;
+  }
+  #pricing-387 .cs-option-group {
+    position: relative;
+    /* these two create the 3D illusion */
+    perspective: 700px;
+    transform-style: preserve-3d;
+  }
+  #pricing-387 .cs-option-group.option2-active .cs-option1-text {
+    opacity: 0;
+    transform: scaleY(0);
+  }
+  #pricing-387 .cs-option-group.option2-active .cs-option2-text {
+    top: 0;
+    opacity: 1;
+  }
+  #pricing-387 .cs-option1-text {
+    transform-origin: center center;
+    transition: opacity 0.3s, transform 0.3s;
+  }
+  #pricing-387 #cs-option2-387 {
+    position: relative;
+  }
+  #pricing-387 #cs-option2-387:before {
+    /* squiggle arrow */
+    content: "";
+    position: absolute;
+    display: block;
+    height: 1.75rem;
+    width: 1.75rem;
+    background: url("https://csimg.nyc3.digitaloceanspaces.com/Pricing/sqiggle-arrow.svg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 1;
+    top: -0.3125rem;
+    right: -2rem;
+  }
+  #pricing-387 #cs-option2-387:after {
+    /* percentage off */
+    content: "Discount";
+    font-size: 0.75rem;
+    line-height: 1.625rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    width: auto;
+    height: 1.625rem;
+    padding: 0 0.75rem;
+    border-radius: 0.5rem;
+    background: #e5f2ff;
+    box-sizing: border-box;
+    color: var(--primaryLight);
+    opacity: 1;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -1.875rem;
+    right: -4.25rem;
+  }
+  #pricing-387 .cs-option2-text {
+    /* push the text down, outside of the group wrapper and animate back up */
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    top: 1.875rem;
+    transition: opacity 0.3s, top 0.6s cubic-bezier(0.42, 0, 0.16, 1.39);
+  }
+  #pricing-387 .cs-card-group {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* 16px - 20px */
+    gap: clamp(1rem, 2vw, 1.25rem);
+  }
+  #pricing-387 .cs-item {
+    list-style: none;
+    /* 20px - 32px top & bottom */
+    /* 16px - 32px left & right */
+    padding: clamp(1.25rem, 3vw, 2rem) clamp(1rem, 2.4vw, 2rem);
+    width: 100%;
+    max-width: 39.375rem;
+    border-radius: 1rem;
+    background: #fff;
+    color: var(--bodyTextColor);
+    box-shadow: 2px 2px 10px #00000030;
+    /* prevents padding from adding to height and width */
+    box-sizing: border-box;
+  }
+  #pricing-387 .cs-item:nth-of-type(2) .cs-option2-text,
+  #pricing-387 .cs-item:nth-of-type(2) .cs-option1-text {
+    transition-delay: 0.1s;
+  }
+  #pricing-387 .cs-popular {
+    position: relative;
+    /* clips the popular tag */
+    overflow: hidden;
+    /* send to the top */
+    order: -1;
+  }
+  #pricing-387 .cs-popular:before {
+    /* Most Popular Tag */
+    content: "Popular";
+    font-size: 0.875rem;
+    text-align: center;
+    line-height: 1.8125rem;
+    font-weight: 700;
+    width: 10.625rem;
+    padding: 0 0.75rem;
+    color: var(--bodyTextColorWhite);
+    background-color: var(--primaryLight);
+    position: absolute;
+    display: block;
+    top: 1.25rem;
+    right: -3.75rem;
+    transform: rotate(42deg);
+  }
+  #pricing-387 .cs-h3 {
+    font-size: 1.25rem;
+    line-height: 1.2em;
+    font-weight: 700;
+    margin: 0 0 0.25rem;
+    padding: 0;
+    color: var(--headerColor);
+  }
+  #pricing-387 .cs-item-text {
+    font-size: 0.875rem;
+    line-height: 1.5em;
+    /* 16px - 24px */
+    margin: 0 0 clamp(1rem, 2vw, 1.5rem);
+    padding: 0;
+    color: var(--bodyTextColor);
+  }
+  #pricing-387 .cs-option-group {
+    position: relative;
+  }
+  #pricing-387 .cs-option-group:after {
+    /* top right box */
+    content: "";
+    width: 100%;
+    height: 1px;
+    /* 32px - 40px */
+    margin-bottom: clamp(2rem, 4vw, 2.5rem);
+    background: linear-gradient(90deg, rgba(232, 232, 232, 0.2) 0%, #e8e8e8 53.78%, rgba(232, 232, 232, 0.2) 100%);
+    opacity: 1;
+    position: relative;
+    display: block;
+  }
+  #pricing-387 .cs-price {
+    font-size: 3.0625rem;
+    line-height: 1.2em;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: var(--headerColor);
+    /* spans are inline, need to add block for margin to work */
+    display: block;
+  }
+  #pricing-387 .cs-small {
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: #4e4b66;
+  }
+  #pricing-387 .cs-included {
+    font-size: 1rem;
+    line-height: 1.5em;
+    font-weight: 700;
+    /* 16px - 24px */
+    margin-bottom: clamp(1rem, 3vw, 1.5rem);
+    color: var(--headerColor);
+    display: block;
+  }
+  #pricing-387 .cs-ul {
+    padding: 0;
+    margin: 0;
+    /* 32px - 40px */
+    margin-bottom: clamp(2rem, 4vw, 2.5rem);
+  }
+  #pricing-387 .cs-li {
+    /* 14px - 16px */
+    font-size: clamp(0.875rem, 1.5vw, 1rem);
+    line-height: 1.5em;
+    list-style: none;
+    padding: 0;
+    margin: 0 0 0.75rem;
+    color: var(--bodyTextColor);
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  #pricing-387 .cs-li:last-of-type {
+    margin-bottom: 0;
+  }
+  #pricing-387 .cs-disabled {
+    /* fades out list items that are disabled from the price tier */
+    filter: grayscale(1);
+    opacity: 0.3;
+  }
+  #pricing-387 .cs-li-img {
+    width: 1.25rem;
+    height: auto;
+    margin-top: 0.1875rem;
+    margin-right: 0.5rem;
+  }
+  #pricing-387 .cs-button-solid {
+    font-size: 1rem;
+    /* 46px - 56px */
+    line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+    text-decoration: none;
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+    color: #fff;
+    min-width: 9.375rem;
+    padding: 0 1.5rem;
+    background-color: var(--primary);
+    border-radius: 0.25rem;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    /* prevents padding from adding to the width */
+    box-sizing: border-box;
+  }
+  #pricing-387 .cs-button-solid:before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    background: #000;
+    opacity: 1;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 0.25rem;
+    transition: width 0.3s;
+  }
+  #pricing-387 .cs-button-solid:hover:before {
+    width: 100%;
+  }
+  #pricing-387 .cs-button-solid {
+    width: 100%;
+    margin: 0 0 1rem 0;
+  }
+}
+/* Tablet 768px */
+@media only screen and (min-width: 48rem) {
+  #pricing-387 .cs-card-group {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
+  #pricing-387 .cs-item {
+    width: 100%;
+    /* ensures they stay the same height if you add more content */
+    align-self: stretch;
+  }
+  #pricing-387 .cs-popular {
+    /* send back to its original order */
+    order: unset;
+  }
+  #pricing-387 #cs-option2-387:before {
+    top: -0.625rem;
+  }
+  #pricing-387 #cs-option2-387:after {
+    top: -2.1875rem;
+    right: -6.25rem;
+  }
+}
+/* Desktop 1300px */
+@media only screen and (min-width: 81.25rem) {
+  #pricing-387 .cs-top-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  #pricing-387 .cs-top-section:after {
+    /* top right box */
+    content: "";
+    width: 100%;
+    height: 1px;
+    /* 32px - 40px */
+    margin-bottom: clamp(2rem, 4vw, 2.5rem);
+    background: linear-gradient(90deg, rgba(232, 232, 232, 0.2) 0%, #e8e8e8 53.78%, rgba(232, 232, 232, 0.2) 100%);
+    opacity: 1;
+    position: relative;
+    display: block;
+  }
+  #pricing-387 .cs-option-group {
+    margin-right: 5rem;
+  }
+  #pricing-387 .cs-option-group:after {
+    display: none;
+  }
+  #pricing-387 .cs-ul {
+    /* splits the list into 2 columns */
+    columns: 2;
+    column-gap: 6.875rem;
+  }
+}
+/*-- -------------------------- -->
+<---          Reviews           -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #reviews {
+    padding: var(--sectionPadding);
+    /* Centers the button */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+  #reviews .cs-container {
+    max-width: 69rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #reviews .cs-title {
+    text-align: center;
+    margin-bottom: 6.25rem;
+  }
+  #reviews .cs-text {
+    /* 88px - 104px */
+    margin-bottom: clamp(5.5em, 10.2vw, 6.5em);
+    max-width: 40.625rem;
+    text-align: center;
+  }
+  #reviews .cs-card-group {
+    /* 48px - 64px */
+    margin: 0 auto clamp(3rem, 5vw, 4rem);
+    padding: 0;
+  }
+  #reviews .cs-item {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0.75rem;
+    margin: 0 auto 4rem;
+    background: #fff;
+    max-width: 33.875rem;
+    width: 100%;
+    /* Prevents padding from affecting height & width */
+    box-sizing: border-box;
+    /* Padding L & R - 16px - 32px */
+    padding: 3.75rem clamp(1rem, 3.2vw, 2rem) 0;
+    /* 32px - 40px */
+    padding-bottom: clamp(2rem, 5.4vw, 2.5rem);
+    list-style: none;
+    text-align: left;
+    box-shadow: 2px 2px 10px #00000022;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  #reviews .cs-item:last-of-type {
+    margin-bottom: 0;
+  }
+  #reviews .cs-item:hover {
+    transform: translateY(-0.5rem);
+    box-shadow: 2px 2px 10px #0000001c;
+  }
+  #reviews .cs-item-img {
+    position: absolute;
+    top: calc(-40 / 16 * 1rem);
+    height: 5rem;
+    width: 5rem;
+  }
+  #reviews .cs-item-p {
+    border-bottom: 1px solid #e8e9ec;
+    margin: 0 0 1.25rem;
+    padding-bottom: 1.25rem;
+    font-size: 1rem;
+    line-height: 1.5em;
+    color: var(--bodyTextColor);
+  }
+  #reviews .cs-reviewer {
+    display: block;
+    margin: 0 auto 0 0;
+    width: 40%;
+    font-size: 1rem;
+    line-height: 1.5em;
+    font-weight: 700;
+    color: var(--headerColor);
+  }
+  #reviews .cs-desc {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: var(#353535);
+  }
+  #reviews .cs-item-stars {
+    height: 1rem;
+    width: 6rem;
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #reviews .cs-card-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+  }
+  #reviews .cs-item {
+    /* reset margin so it won't interfere with flexbox */
+    margin: 0;
   }
 }
