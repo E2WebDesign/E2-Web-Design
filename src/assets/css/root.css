@@ -8,7 +8,7 @@
     --primary: #0070e0;
     --primaryLight: #0280ff;
     --primaryDark: #0665c5;
-    --secondary: #c1c258;
+    --secondary: #ffeb0e;
     --secondaryDark: #a0a249;
     --offSet: #f7f7f7;
     --svgBackground: #0281ff20;
@@ -22,6 +22,7 @@
     --buttonWhiteHoverColor: #f4f4f4;
     --buttonTextColor: #fff;
     --buttonWhiteTextColor: var(--primary);
+    --reviewsColor: #e8c725;
     /* 13px - 16px */
     --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
     /* 31px - 49px */
@@ -1096,9 +1097,9 @@ html {
     top: 0;
     left: 0;
     content: "";
-    opacity: 0.7;
+    opacity: 0.95;
     display: block;
-    background: #043f7a;
+    background: #366a9e;
     height: 100%;
     width: 100%;
   }
@@ -1181,8 +1182,8 @@ html {
     display: block;
     height: 100%;
     width: 100%;
-    background: #043f7a;
-    opacity: 0.7;
+    background: #366a9e;
+    opacity: 0.93;
     top: 0;
     left: 0;
     z-index: 1;
