@@ -260,6 +260,10 @@ html {
     transition: width 0.5s, opacity 0.3s;
     backdrop-filter: blur(10px);
   }
+  #cs-navigation.cs-active {
+    border-bottom-right-radius: 0rem;
+    border-bottom-left-radius: 0rem;
+  }
   #cs-navigation.cs-active:before {
     opacity: 1;
     width: 100%;
@@ -470,7 +474,6 @@ html {
     top: 100%;
     left: auto;
     right: 0;
-    z-index: -1;
     transition: transform 0.4s, opacity 0.3s;
     transform: scaleX(0);
     box-shadow: inset rgba(0, 0, 0, 0.2) 0px 8px 24px;
@@ -1053,7 +1056,7 @@ html {
     justify-content: center;
     align-items: center;
     min-height: 30vh;
-    padding-top: 3.125rem;
+    padding-top: 6.875rem;
   }
   #int-hero picture {
     z-index: -2;
@@ -1108,6 +1111,7 @@ html {
 @media only screen and (min-width: 48rem) {
   #int-hero {
     font-size: 100%;
+    padding-top: 8.75rem;
   }
   #int-hero h1 {
     font-size: 4rem;
@@ -1205,7 +1209,7 @@ html {
 /* Mobile */
 @media only screen and (min-width: 0rem) {
   #footer {
-    background: #ecedf0;
+    background: #f0f1f4;
     padding: 5.25rem 0 calc(20 / 16 * 1rem);
     font-size: min(4vw, 1.2em);
     position: relative;
