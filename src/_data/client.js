@@ -1,8 +1,8 @@
 module.exports = {
-    "name": "Code Stitch Web Designs",
-    "email": "help@codestitch.app",
-    "phoneForTel": "555-779-4407",
-    "phoneFormatted": "(555) 779-4407",
+    "name": "E2 Web Design",
+    "email": "hello@e2webdesign.com",
+    "phoneForTel": "555-678-2347",
+    "phoneFormatted": "(555) 678-23477",
     "address": {
         "lineOne": "First Address Line",
         "lineTwo": "Second Address Line",
@@ -17,5 +17,5 @@ module.exports = {
         "instagram": "https://www.instagram.com/",
     },
     //! Make sure you include the file protocol (e.g. https://) and that NO TRAILING SLASH is included
-    "domain": "https://www.example.com"
+    "domain": "https://www.e2webdesign.com"
 };
