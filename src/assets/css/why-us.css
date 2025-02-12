@@ -131,6 +131,9 @@
     padding: var(--sectionPadding);
     background-color: #f7f7f7;
   }
+  #steps-284 #cs-desktop-button {
+    display: none;
+  }
   #steps-284 .cs-container {
     width: 100%;
     /* changes to 1104px on tablet */
@@ -144,13 +147,10 @@
   }
   #steps-284 .cs-content {
     /* set text align to left if content needs to be left aligned */
-    text-align: left;
+    text-align: center;
     width: 100%;
     max-width: 27.125rem;
-    display: flex;
-    flex-direction: column;
     /* centers content horizontally, set to flex-start to left align */
-    align-items: flex-start;
   }
   #steps-284 .cs-text {
     margin-bottom: 1rem;
@@ -160,6 +160,7 @@
   }
   #steps-284 .cs-right-section {
     margin: 0;
+    margin-top: -3rem;
     padding: 0;
     max-width: 35.125rem;
   }
@@ -296,6 +297,12 @@
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
+  #steps-284 #cs-desktop-button {
+    display: block;
+  }
+  #steps-284 #cs-mobile-button {
+    display: none;
+  }
   #steps-284 .cs-container {
     max-width: 69rem;
     flex-direction: row;
@@ -304,9 +311,25 @@
     column-gap: 2.75rem;
   }
   #steps-284 .cs-content {
+    text-align: left;
     width: 50%;
     /* reset margin to play nice with flexbox */
     margin: 0;
+    max-width: 27.125rem;
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: flex-start;
+  }
+  #steps-284 .cs-content {
+    /* set text align to left if content needs to be left aligned */
+    text-align: left;
+    width: 100%;
+    max-width: 27.125rem;
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: flex-start;
   }
   #steps-284 .cs-right-section {
     width: 57%;

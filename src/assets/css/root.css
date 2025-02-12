@@ -1291,13 +1291,12 @@ html {
   #footer .right-section .lists ul h2:before {
     position: absolute;
     bottom: calc(-16 / 16 * 1rem);
-    left: 0;
     content: "";
     opacity: 1;
     display: block;
     background: var(--headerColor);
     height: 0.125rem;
-    width: 6.0625rem;
+    width: 5.1875rem;
   }
   #footer .right-section .lists ul:nth-of-type(3) {
     margin-top: 3.125rem;
@@ -1394,17 +1393,6 @@ html {
     line-height: 1.16666667em;
     font-weight: bold;
     color: var(--headerColor);
-  }
-  #footer .right-section .lists ul h2:before {
-    position: absolute;
-    bottom: calc(-16 / 16 * 1rem);
-    left: 50;
-    content: "";
-    opacity: 1;
-    display: block;
-    background: var(--headerColor);
-    height: 0.125rem;
-    width: 6.0625rem;
   }
   #footer .right-section .lists ul:nth-of-type(3) {
     margin-top: 0;

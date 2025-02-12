@@ -156,6 +156,10 @@
         padding: var(--sectionPadding);
         background-color: #f7f7f7;
 
+        #cs-desktop-button {
+            display: none;
+        }
+
         .cs-container {
             width: 100%;
             /* changes to 1104px on tablet */
@@ -170,13 +174,11 @@
 
         .cs-content {
             /* set text align to left if content needs to be left aligned */
-            text-align: left;
+            text-align: center;
             width: 100%;
             max-width: (434/16rem);
-            display: flex;
-            flex-direction: column;
             /* centers content horizontally, set to flex-start to left align */
-            align-items: flex-start;
+
         }
 
         .cs-text {
@@ -188,6 +190,7 @@
 
         .cs-right-section {
             margin: 0;
+            margin-top: -3rem; 
             padding: 0;
             max-width: (562/16rem);
         }
@@ -350,6 +353,15 @@
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
     #steps-284 {
+
+        #cs-desktop-button {
+            display: block;
+        }
+
+        #cs-mobile-button {
+            display: none;
+        }
+
         .cs-container {
             max-width: (1104/16rem);
             flex-direction: row;
@@ -359,9 +371,26 @@
         }
 
         .cs-content {
+            text-align: left;
             width: 50%;
             /* reset margin to play nice with flexbox */
             margin: 0;
+            max-width: (434/16rem);
+            display: flex;
+            flex-direction: column;
+            /* centers content horizontally, set to flex-start to left align */
+            align-items: flex-start;
+        }
+
+        .cs-content {
+            /* set text align to left if content needs to be left aligned */
+            text-align: left;
+            width: 100%;
+            max-width: (434/16rem);
+            display: flex;
+            flex-direction: column;
+            /* centers content horizontally, set to flex-start to left align */
+            align-items: flex-start;
         }
 
         .cs-right-section {
