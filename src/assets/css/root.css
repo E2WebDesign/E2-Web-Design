@@ -97,7 +97,9 @@
     text-align: center;
   }
   .cs-button-white:hover {
-    background-color: var(--buttonWhiteHoverColor);
+    box-shadow: 2px 2px 10px #ffffff41;
+    background-color: var(--buttonBackgroundWhite);
+    color: #0280ff;
   }
   .cs-hide-on-mobile {
     display: none;
