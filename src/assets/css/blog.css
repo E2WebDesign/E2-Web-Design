@@ -141,9 +141,9 @@
     top: 0;
     left: 0;
     content: "";
-    opacity: 0.9;
+    opacity: 0.95;
     display: block;
-    background: #366a9e;
+    background: #043f7a;
     height: 100%;
     width: 100%;
   }
@@ -468,7 +468,7 @@
   .blog-article .blog-dot {
     display: block;
     border-radius: 50%;
-    background-color: #fe4f70;
+    background-color: var(--primary);
     height: 3px;
     width: 3px;
   }
@@ -525,7 +525,7 @@
   .blog-article #blog-content a {
     text-decoration: underline;
     font-size: inherit;
-    color: var(--secondary);
+    color: var(--primary);
   }
   .blog-article #blog-content ul,
   .blog-article #blog-content ol {

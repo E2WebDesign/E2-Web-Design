@@ -702,6 +702,7 @@
     z-index: 1;
     /* Prevents overflow from the image going off screen */
     overflow: hidden;
+    background-color: #f7f7f7;
   }
   #gallery-1374 .cs-container {
     width: 100%;
@@ -837,7 +838,6 @@
 @media only screen and (min-width: 0rem) {
   #faq-326 {
     padding: var(--sectionPadding);
-    background-color: var(--offSet);
   }
   #faq-326 .cs-container {
     width: 100%;
@@ -873,8 +873,8 @@
   #faq-326 .cs-faq-item {
     list-style: none;
     width: 100%;
-    background-color: #fff;
-    box-shadow: 2px 2px 10px #0000000f;
+    background-color: #f7f7f7;
+    box-shadow: 2px 2px 10px #00000027;
     border-radius: 0.5rem;
     /* clips all corners of the button that overlap the rounded border */
     overflow: hidden;
@@ -908,7 +908,7 @@
     font-weight: bold;
     /* 16px - 20px */
     padding: clamp(1rem, 1.3vw, 1.25rem);
-    background-color: #fff;
+    background-color: #f7f7f7;
     border: none;
     border-radius: 0.5rem;
     color: var(--headerColor);
@@ -985,6 +985,7 @@
     text-align: center;
     display: flex;
     justify-content: center;
+    background-color: #f7f7f7;
   }
   #reviews .cs-container {
     max-width: 69rem;

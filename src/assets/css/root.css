@@ -8,8 +8,8 @@
     --primary: #0070e0;
     --primaryLight: #0280ff;
     --primaryDark: #0665c5;
-    --secondary: #ffeb0e;
-    --secondaryDark: #a0a249;
+    --secondary: #0070e0;
+    --secondaryDark: #043f7a;
     --offSet: #f7f7f7;
     --svgBackground: #0281ff20;
     --svgBackgroundAlt: linear-gradient(to right, #0070e0, #0280ff);
@@ -1104,7 +1104,7 @@ html {
     content: "";
     opacity: 0.95;
     display: block;
-    background: #366a9e;
+    background: #043f7a;
     height: 100%;
     width: 100%;
   }
@@ -1188,8 +1188,8 @@ html {
     display: block;
     height: 100%;
     width: 100%;
-    background: #366a9e;
-    opacity: 0.93;
+    background: #043f7a;
+    opacity: 0.9;
     top: 0;
     left: 0;
     z-index: 1;
