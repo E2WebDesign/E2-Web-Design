@@ -601,7 +601,7 @@
 @media only screen and (min-width: 0rem) {
   #faq-326 {
     padding: var(--sectionPadding);
-    background-color: #F7F7F7;
+    background-color: #f7f7f7;
   }
   #faq-326 .cs-container {
     width: 100%;
@@ -736,6 +736,16 @@
     /* clips the text so it doesn't show up */
     overflow: hidden;
     transition: opacity 0.3s, padding-bottom 0.3s;
+  }
+}
+/*-- -------------------------- -->
+<---            CTA             -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #cta-52 {
+    background-color: #f7f7f7;
+    z-index: 1;
   }
 }
 /*-- -------------------------- -->
