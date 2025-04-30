@@ -1,8 +1,8 @@
 module.exports = {
     "name": "E2 Web Design",
     "email": "hello@e2webdesign.com",
-    "phoneForTel": "555-678-2347",
-    "phoneFormatted": "(555) 678-23477",
+    "phoneForTel": "320-634-6202",
+    "phoneFormatted": "(320) 634-6202",
     "address": {
         "lineOne": "First Address Line",
         "lineTwo": "Second Address Line",
