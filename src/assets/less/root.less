@@ -207,6 +207,17 @@
         opacity: 0;
     }
 
+    @media (prefers-reduced-motion: reduce) {
+        .skip-link {
+            transition-duration: 0.001ms !important;
+        }
+    }
+
+    .skip-link:focus {
+        top: 0;
+        transition: top 0.05s ease-in;
+    }
+
     #skiptocontent a {
         padding:6px;
         position: absolute;
@@ -226,7 +237,7 @@
         position:absolute;
         left:0px;
         top:0px;
-        outline-color:transparent;	
+        box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.6);
         -webkit-transition: top .05s ease-in;
         transition: top .05s ease-in;
     }
