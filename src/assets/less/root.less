@@ -200,11 +200,18 @@
 
     // Hidden Screen reader skip nav button
     .skip-link {
-        z-index: -1111111;
         position: absolute;
-        top: 0;
+        top: -40px;
         left: 0;
-        opacity: 0;
+        padding: 6px;
+        background: #BF1722;
+        color: white;
+        border-right: 1px solid white;
+        border-bottom: 1px solid white;
+        border-bottom-right-radius: 8px;
+        z-index: 10001;  /* Must be above navbar (z-index: 10000) to be visible on focus */
+        transition: top 0.5s ease-out;
+        text-decoration: none;
     }
 
     @media (prefers-reduced-motion: reduce) {
@@ -218,36 +225,7 @@
         transition: top 0.05s ease-in;
     }
 
-    #skiptocontent a {
-        padding:6px;
-        position: absolute;
-        top:-40px;
-        left:0px;
-        color:white;
-        border-right:1px solid white;
-        border-bottom:1px solid white;
-        border-bottom-right-radius:8px;
-        background:#BF1722;
-        -webkit-transition: top .5s ease-out;
-        transition: top .5s ease-out;
-        z-index: 100;
-    }
-    
-    #skiptocontent a:focus {
-        position:absolute;
-        left:0px;
-        top:0px;
-        box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.6);
-        -webkit-transition: top .05s ease-in;
-        transition: top .05s ease-in;
-    }
-    
-    @media (prefers-reduced-motion: reduce) {
-        #skiptocontent a {
-            transition-duration: 0.001ms !important;
-        }
-    }
-    
+
     // Grab your fonts to locally host from https://google-webfonts-helper.herokuapp.com/fonts
 
     /* roboto-regular - latin */
