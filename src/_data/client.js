@@ -1,8 +1,8 @@
 module.exports = {
     "name": "E2 Web Design",
     "email": "hello@e2webdesign.com",
-    "phoneForTel": "555-678-2347",
-    "phoneFormatted": "(555) 678-23477",
+    "phoneForTel": "320-634-6202",
+    "phoneFormatted": "(320) 634-6202",
     "address": {
         "lineOne": "First Address Line",
         "lineTwo": "Second Address Line",
@@ -13,8 +13,8 @@ module.exports = {
         "mapLink": "https://maps.app.goo.gl/TEdS5KoLC9ZcULuQ6"
     },
     "socials": {
-        "facebook": "https://www.facebook.com/",
-        "instagram": "https://www.instagram.com/",
+        "facebook": "https://www.facebook.com/e2webdesign",
+        "instagram": "https://www.instagram.com/e2webdesign",
     },
     //! Make sure you include the file protocol (e.g. https://) and that NO TRAILING SLASH is included
     "domain": "https://www.e2webdesign.com"
