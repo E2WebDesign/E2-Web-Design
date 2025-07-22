@@ -199,13 +199,33 @@
     }
 
     // Hidden Screen reader skip nav button
-    .skip {
-        z-index: -1111111;
+    .skip-link {
         position: absolute;
-        top: 0;
+        top: -40px;
         left: 0;
-        opacity: 0;
+        padding: 6px;
+        background: #0280ff;
+        color: white;
+        border-right: 1px solid white;
+        border-bottom: 1px solid white;
+        border-bottom-right-radius: 8px;
+        z-index: 10001;  /* Must be above navbar (z-index: 10000) to be visible on focus */
+        transition: top 0.5s ease-out;
+        text-decoration: none;
     }
+
+    @media (prefers-reduced-motion: reduce) {
+        .skip-link {
+            transition-duration: 0.001ms !important;
+        }
+    }
+
+    .skip-link:focus {
+        top: 0;
+        transition: top 0.05s ease-in;
+    }
+
+
     // Grab your fonts to locally host from https://google-webfonts-helper.herokuapp.com/fonts
 
     /* roboto-regular - latin */

@@ -14,7 +14,8 @@ module.exports = {
     },
     "socials": {
         "facebook": "https://www.facebook.com/e2webdesign",
-        "instagram": "https://www.instagram.com/e2webdesign",
+        "instagram": "https://www.instagram.com/e2webdesign/",
+        "linkedin" : "https://www.linkedin.com/company/e2-web-design/"
     },
     //! Make sure you include the file protocol (e.g. https://) and that NO TRAILING SLASH is included
     "domain": "https://www.e2webdesign.com"
