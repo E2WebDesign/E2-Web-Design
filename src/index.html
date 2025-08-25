@@ -1,6 +1,6 @@
 ---
-title: 'E2 Web Design | Alexandria, MN'
-description: 'Meta description for the page'
+title: 'Alexandria MN Web Design | SEO-Friendly Websites That Convert'
+description: 'E2 Web Design in Alexandria, MN builds fast, mobile-friendly websites that boost leads and bookings. Affordable pricing & unlimited support. Get started today!'
 preloadImg: '/assets/images/hero.webp'
 permalink: '/'
 tags: 'sitemap' # Sitemap will use all pages in content/, due to content.json. As index.html is not included in content/ we need to manually add the sitemap tag to this page (only).
@@ -43,128 +43,146 @@ eleventyNavigation:
         }
     </script>
 
-    <!-- JSON Schema Markup -->
-    <script type="application/ld+json">
+<!-- JSON Schema Markup -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "name": "E2 Web Design",
+      "logo": "https://www.e2webdesign.com/assets/svgs/e2.svg",
+      "telephone": "(320) 634-6202",
+      "email": "hello@e2webdesign.com",
+      "url": "https://www.e2webdesign.com",
+      "sameAs": [
+        "https://www.facebook.com/yourpage",
+        "https://www.linkedin.com/company/yourcompany"
+      ],
+      "foundingDate": "2024",
+      "foundingLocation": {
+        "@type": "Place",
+        "name": "Alexandria, Minnesota"
+      }
+    },
+    {
+      "@type": "LocalBusiness",
+      "name": "E2 Web Design",
+      "image": "https://www.e2webdesign.com/assets/svgs/e2.svg",
+      "telephone": "(320) 634-6202",
+      "email": "hello@e2webdesign.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Alexandria",
+        "addressRegion": "MN",
+        "postalCode": "56308",
+        "addressCountry": "US"
+      },
+      "areaServed": [
+        { "@type": "Place", "name": "Alexandria, MN" },
+        { "@type": "Place", "name": "St. Cloud, MN" },
+        { "@type": "Place", "name": "Minneapolis, MN" },
+        { "@type": "Place", "name": "Saint Paul, MN" },
+        { "@type": "Place", "name": "Rochester, MN" },
+        { "@type": "Place", "name": "Duluth, MN" },
+        { "@type": "Place", "name": "Bloomington, MN" },
+        { "@type": "Place", "name": "Fargo, ND" },
+        { "@type": "Place", "name": "Minnesota" }
+      ],
+      "url": "https://www.e2webdesign.com"
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
         {
-          "@context": "https://schema.org",
-          "@graph": [
-            {
-              "@type": "Organization",
-              "name": "{{ client.name }}",
-              "logo": "https://www.e2webdesign.com/assets/svgs/e2.svg",
-              {% if client.phoneFormatted %}"telephone": "{{ client.phoneFormatted }}",{% endif %}
-              {% if client.email %}"email": "{{ client.email }}",{% endif %}
-              {% if client.address %}
-              "address": {
-                "@type": "PostalAddress"
-                {% if client.address.city %}, "addressLocality": "{{ client.address.city }}"{% endif %}
-                {% if client.address.state %}, "addressRegion": "{{ client.address.state }}"{% endif %}
-                {% if client.address.zip %}, "postalCode": "{{ client.address.zip }}"{% endif %}
-                {% if client.address.country %}, "addressCountry": "{{ client.address.country }}"{% endif %}
-              },
-              {% endif %}
-              {% if client.domain and page.url %}"url": "{{ client.domain }}{{ page.url }}",{% endif %}
-              {% if client.socials %}
-              "sameAs": [
-                {% for platform, url in client.socials %}
-                  {% if not loop.first %}, {% endif %}"{{ url }}"
-                {% endfor %}
-              ],
-              {% endif %}
-              "foundingDate": "2024",
-              "foundingLocation": {
-                "@type": "Place",
-                "name": "Alexandria, Minnesota"
-              }
-            },
-            {
-              "@type": "FAQPage",
-              "mainEntity": [
-                {
-                  "@type": "Question",
-                  "name": "Why should I choose E2 Web Design?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "We'll be your full-time website team and IT department. Along with your hand-coded, sales-focused, and performance tested website, you'll get full service maintenance including unlimited edits, security, and technical updates for the life of your plan."
-                  }
-                },
-                {
-                  "@type": "Question",
-                  "name": "How long does it take to build my website?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "We'll have you ready for launch in 10 business days after gathering all necessary information."
-                  }
-                },
-                {
-                  "@type": "Question",
-                  "name": "What if I need changes to my site later?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "No need to worry. Unlimited edits are included with all plans."
-                  }
-                },
-                {
-                  "@type": "Question",
-                  "name": "Do I own my website?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Yes! You have full ownership of your site and content."
-                  }
-                },
-                {
-                  "@type": "Question",
-                  "name": "What's included in my monthly plan?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "We'll take care of your hosting, domain, SSL, analytics, edits, security, technical updates, and much more."
-                  }
-                },
-                {
-                  "@type": "Question",
-                  "name": "Will my site be mobile-friendly?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Absolutely! We'll make sure your site looks and performs its best on every device."
-                  }
-                },
-                {
-                  "@type": "Question",
-                  "name": "Can I track my website's performance?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Yes! We'll send you easy to read reports so you can see exactly how your site is performing."
-                  }
-                },
-                {
-                  "@type": "Question",
-                  "name": "What is reputation management?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "We'll help you collect, monitor, and post your reviews so customers can see you for the expert you are."
-                  }
-                },
-                {
-                  "@type": "Question",
-                  "name": "What happens if I outgrow my website?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "We'll seamlessly upgrade your plan to meet your needs."
-                  }
-                },
-                {
-                  "@type": "Question",
-                  "name": "How do I get started?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Call us today for your free consultation."
-                  }
-                }
-              ]
-            }
-          ]
+          "@type": "Question",
+          "name": "Why should I choose E2 Web Design?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We'll be your full-time website team and IT department..."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does it take to build my website?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We'll have you ready for launch in 10 business days after gathering all necessary information."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What if I need changes to my site later?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No need to worry. Unlimited edits are included with all plans."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I own my website?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes! You have full ownership of your site and content."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What's included in my monthly plan?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We'll take care of your hosting, domain, SSL, analytics, edits, security, technical updates, and much more."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will my site be mobile-friendly?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Absolutely! We'll make sure your site looks and performs its best on every device."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I track my website's performance?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes! We'll send you easy to read reports so you can see exactly how your site is performing."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is reputation management?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We'll help you collect, monitor, and post your reviews so customers can see you for the expert you are."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What happens if I outgrow my website?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We'll seamlessly upgrade your plan to meet your needs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I get started?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Call us today for your free consultation."
+          }
         }
-        </script>
+      ]
+    }
+  ]
+}
+</script>
+
+
+
+
 {% endblock %}
 
 {% block body %}
